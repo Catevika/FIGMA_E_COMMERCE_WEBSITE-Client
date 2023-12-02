@@ -1,0 +1,90 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5.5rem;
+}
+
+.left-side {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.left-side img {
+  aspect-ratio: 2 / 3;
+}
+
+.logo {
+  position: absolute;
+  top: 2rem;
+}
+
+.right-side,
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.right-side {
+  margin-right: 10rem;
+}
+
+.text-2 span {
+  color: var(--clr-green);
+  font-weight: var(--fw-600);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  color: var(--clr-gray);
+}
+
+.form-group input {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom-color: var(--clr-gray);
+  line-height: 1.75rem;
+  padding-left: 1rem;
+}
+
+.password {
+  display: flex;
+  justify-content: space-between;
+}
+
+.eye-icon {
+  fill: var(--clr-gray);
+  cursor: pointer;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--clr-white);
+  width: 100%;
+  padding: 0.625rem 2.5rem;
+  background-color: var(--clr-very-dark-gray);
+  border-radius: 0.5rem;
+}
+
+@media (max-width: 1024px) {
+  .right-side {
+    margin-right: 5.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .right-side {
+    margin: 0 2rem;
+  }
+}
