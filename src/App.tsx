@@ -1,7 +1,6 @@
 import { useEffect } from 'react';
-import { Outlet, useNavigate } from 'react-router-dom';
-import './App.css';
-import Signup from './pages/Signup/Signup';
+import { useNavigate } from 'react-router-dom';
+import Layout from './components/Layout/Layout';
 
 function App() {
   const isRegistered = localStorage.getItem('User');
@@ -9,15 +8,13 @@ function App() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    isRegistered && currentUser ? navigate('/home') :
+    isRegistered && currentUser ? navigate('/home/1') :
       isRegistered && !currentUser ? navigate('/signin') :
         navigate('/signup');
   }, [ currentUser, isRegistered, navigate ]);
 
   return (
-    <main>
-      {isRegistered ? <Outlet /> : <Signup />}
-    </main>
+    <Layout />
   );
 }
 

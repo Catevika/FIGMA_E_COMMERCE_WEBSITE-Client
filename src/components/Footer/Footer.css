@@ -1,0 +1,69 @@
+.footer-container {
+  color: var(--clr-white);
+  background-color: var(--clr-very-dark-gray);
+}
+
+.footer-content {
+  margin: 5rem 10rem 2rem;
+}
+
+.footer-top {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-top-left {
+  display: flex;
+  margin-bottom: 3rem;
+}
+
+.footer-top-left span:nth-of-type(1) {
+  margin-right: 2rem;
+}
+
+.footer-top-left span:nth-of-type(2) {
+  padding-left: 2rem;
+  border-left: 1px solid var(--clr-gray);
+}
+
+.footer-description {
+  display: inline;
+}
+
+.footer-content>.footer-top>.megaMenuHome-container {
+  top: auto;
+  bottom: 11rem;
+  margin: 0 -10rem;
+}
+
+.footer-content>.footer-top>.nav>.mega-menu {
+  color: var(--clr-white);
+}
+
+.footer-content>.footer-top>.nav>.mega-menu:hover,
+.footer-content>.footer-top>.nav>.mega-menu:focus,
+.footer-content>.footer-top>.nav>.mega-menu.active {
+  color: var(--clr-gray);
+}
+
+.footer-content>.footer-top>.nav-icons {
+  display: none;
+}
+
+.footer-bottom {
+  display: flex;
+  gap: 1.75rem;
+  padding-top: 1rem;
+  border-top: 0.5px solid var(--clr-gray);
+}
+
+.footer-bottom .footer-bottom-text {
+  color: var(--clr-light-gray);
+}
+
+.footer-bottom-icons {
+  display: flex;
+  gap: 1.5rem;
+  margin-left: auto;
+}

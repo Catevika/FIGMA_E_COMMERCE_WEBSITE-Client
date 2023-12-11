@@ -1,0 +1,38 @@
+.nav,
+.nav-icons,
+.shopping-cart {
+  display: flex;
+}
+
+.nav {
+  justify-content: center;
+  gap: 2.5rem;
+  margin-left: -2.5rem;
+}
+
+.nav-cart-number-icon {
+  font-size: var(--fs-12);
+  font-weight: var(--fw-700);
+  color: var(--clr-white);
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  padding-top: 1px;
+  margin-top: 2px;
+  background-color: var(--clr-very-dark-gray);
+  border-radius: 50%;
+}
+
+.mega-menu {
+  color: var(--clr-gray);
+  cursor: pointer;
+}
+
+.mega-menu:hover,
+.mega-menu.active {
+  color: var(--clr-very-dark-gray);
+}
+
+.mega-menu.pending {
+  color: var(--clr-blue);
+}

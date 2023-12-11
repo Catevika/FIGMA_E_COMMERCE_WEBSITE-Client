@@ -34,7 +34,7 @@ const Signin = () => {
 
     if ((currentUser.login === registeredUser.username || currentUser.login === registeredUser.email) && (currentUser.password === registeredUser.password)) {
       rememberMe === true ? localStorage.setItem('CurrentUser', JSON.stringify(currentUser)) : null;
-      navigate('/home');
+      navigate('/home/1');
     } else {
       setErrorMessage('Please enter valid credentials or reset your password');
     }
@@ -42,32 +42,34 @@ const Signin = () => {
 
   return (
     <section className="container">
-      <div className='left-side'>
-        <Logo />
-        <img src={authImg} alt="armchair" aria-hidden="true" />
-      </div>
-      <div className='right-side'>
-        <h4>Sign in</h4>
-        <form className='form' method='POST' onSubmit={handleSubmit}>
-          <div className='form-group'>
-            <label htmlFor="login">Your username or email address</label>
-            <input type="text" id='login' name='login' autoComplete='off' value={currentUser.login} onChange={handleChange} required />
-          </div>
+      <div className='content'>
+        <div className='left-side'>
+          <div className='logo-auth'><Logo /></div>
+          <img src={authImg} alt="armchair" aria-hidden="true" />
+        </div>
+        <div className='right-side'>
+          <h4>Sign in</h4>
+          <form className='form' method='POST' onSubmit={handleSubmit}>
+            <div className='form-group'>
+              <label htmlFor="login">Your username or email address</label>
+              <input type="text" id='login' name='login' autoComplete='off' value={currentUser.login} onChange={handleChange} required />
+            </div>
 
-          <div className='form-group'>
-            <label htmlFor="password" className='password'>Password <img src={eye} alt="eye-icon" className='eye-icon' onClick={togglePasswordVisibility} /></label>
-            <input type={passwordVisible ? 'text' : 'password'} id='password' name='password' autoComplete='current-password' value={currentUser.password} onChange={handleChange} required />
-          </div>
+            <div className='form-group'>
+              <label htmlFor="password" className='password'>Password <img src={eye} alt="eye-icon" className='eye-icon' onClick={togglePasswordVisibility} /></label>
+              <input type={passwordVisible ? 'text' : 'password'} id='password' name='password' autoComplete='current-password' value={currentUser.password} onChange={handleChange} required />
+            </div>
 
-          <div className='form-group'>
-            <RememberCheckbox />
-          </div>
+            <div className='form-group'>
+              <RememberCheckbox />
+            </div>
 
-          <div className='error-container'>
-            <p className='error'>{errorMessage ? errorMessage : null}</p>
-          </div>
-          <button type='submit' className='btn btn-small'>Sign In</button>
-        </form>
+            <div className='error-container'>
+              <p className='error'>{errorMessage ? errorMessage : null}</p>
+            </div>
+            <button type='submit' className='btn btn-small'>Sign In</button>
+          </form>
+        </div>
       </div>
     </section>
   );

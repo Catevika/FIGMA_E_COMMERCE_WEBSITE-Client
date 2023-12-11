@@ -5,9 +5,13 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import App from './App.tsx';
+import Layout from './components/Layout/Layout.tsx';
 import './index.css';
 import ErrorPage from './pages/ErrorPage/ErrorPage.tsx';
-import Home from './pages/Home/Home.tsx';
+import { Home1 } from './pages/Home1/Home1.tsx';
+import Home2 from './pages/Home2/Home2.tsx';
+import Home3 from './pages/Home3/Home3.tsx';
+import Home4 from './pages/Home4/Home.tsx';
 import Signin from './pages/Signin/Signin.tsx';
 import Signup from './pages/Signup/Signup.tsx';
 
@@ -15,25 +19,56 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    errorElement: <ErrorPage />,
+    errorElement: <ErrorPage />
+  },
+  {
+    path: "/signup",
+    element: <Signup />,
+    errorElement: <ErrorPage />
+  }, {
+    path: "/signin",
+    element: <Signin />,
+    errorElement: <ErrorPage />
+  },
+  {
+    path: "/home",
+    element: <Layout />,
     children: [
       {
-        path: "/signup",
-        element: <Signup />,
-        errorElement: <ErrorPage />
-      }, {
-        path: "/signin",
-        element: <Signin />,
+        path: '/home/1',
+        element: <Home1 />,
+      },
+      {
+        path: '/home/2',
+        element: <Home2 />,
+      },
+      {
+        path: '/home/3',
+        element: <Home3 />,
+      },
+      {
+        path: '/home/4',
+        element: <Home4 />,
+      }
+    ]
+  }/* ,
+      {
+        path: "/shop",
+        element: <Shop />,
         errorElement: <ErrorPage />
       },
       {
-        path: "/home",
-        element: <Home />,
+        path: "/product",
+        element: <Product />,
         errorElement: <ErrorPage />
-      }
-    ]
-  }
-]);
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
+        errorElement: <ErrorPage />
+      } */
+]
+);
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>

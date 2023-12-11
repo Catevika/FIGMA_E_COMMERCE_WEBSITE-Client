@@ -1,0 +1,5 @@
+.service-card-container {
+  min-width: 262px;
+  padding: 3rem 2rem;
+  background-color: var(--clr-light-gray);
+}

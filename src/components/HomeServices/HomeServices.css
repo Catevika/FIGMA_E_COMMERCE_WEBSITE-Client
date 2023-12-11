@@ -1,0 +1,8 @@
+.home1-services-container {
+  margin: 3rem 0;
+}
+
+.home1-services-content {
+  display: flex;
+  gap: 1.5rem;
+}

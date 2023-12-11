@@ -1,0 +1,10 @@
+.home1-articles-content {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.home1-articles-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
