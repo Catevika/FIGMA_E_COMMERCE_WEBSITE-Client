@@ -24,7 +24,7 @@
 
 .footer-top-left span:nth-of-type(2) {
   padding-left: 2rem;
-  border-left: 1px solid var(--clr-gray);
+  border-left: 1px solid var(--clr-bluish-gray);
 }
 
 .footer-description {
@@ -44,7 +44,7 @@
 .footer-content>.footer-top>.nav>.mega-menu:hover,
 .footer-content>.footer-top>.nav>.mega-menu:focus,
 .footer-content>.footer-top>.nav>.mega-menu.active {
-  color: var(--clr-gray);
+  color: var(--clr-bluish-gray);
 }
 
 .footer-content>.footer-top>.nav-icons {
@@ -55,15 +55,35 @@
   display: flex;
   gap: 1.75rem;
   padding-top: 1rem;
-  border-top: 0.5px solid var(--clr-gray);
+  border-top: 0.5px solid var(--clr-bluish-gray);
 }
 
 .footer-bottom .footer-bottom-text {
   color: var(--clr-light-gray);
 }
 
-.footer-bottom-icons {
-  display: flex;
-  gap: 1.5rem;
-  margin-left: auto;
+@media (max-width: 1275px) {
+  .footer-content {
+    margin: 5rem 5rem 2rem;
+  }
+
+  .footer-content>.footer-top>.megaMenuHome-container {
+    margin: 0 -5rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer-content {
+    margin: 5rem 1rem 2rem;
+  }
+
+  .footer-content>.footer-top>.megaMenuHome-container {
+    margin: 0 -1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    margin-bottom: -2.5rem;
+  }
 }

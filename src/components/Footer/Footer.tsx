@@ -1,8 +1,6 @@
-import fbIcon from '../../assets/icons/social-outline-facebook.svg';
-import instaIcon from '../../assets/icons/social-outline-instagram.svg';
-import youtubeIcon from '../../assets/icons/social-outline-youtube.svg';
 import Logo from '../Logo/Logo';
-import Navbar from '../Navbar/Navbar';
+import Navbar from '../Navigation/Navbar/Navbar';
+import SocialLineIcons from '../SocialLineIcons/SocialLineIcons';
 import './Footer.css';
 
 const Footer = () => {
@@ -20,11 +18,7 @@ const Footer = () => {
           <p className='caption-1 footer-bottom-text'>Copyright © 2023 3legant. All rights reserved</p>
           <p>Privacy Policy</p>
           <p>Terms of Use</p>
-          <p className='footer-bottom-icons'>
-            <img src={instaIcon} alt='Instagram icon' />
-            <img src={fbIcon} alt='Facebook icon' />
-            <img src={youtubeIcon} alt='Youtube icon' />
-          </p>
+          <SocialLineIcons />
         </div>
       </div>
     </div>

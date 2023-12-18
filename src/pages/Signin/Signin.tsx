@@ -41,22 +41,22 @@ const Signin = () => {
   };
 
   return (
-    <section className="container">
+    <section className='container'>
       <div className='content'>
         <div className='left-side'>
           <div className='logo-auth'><Logo /></div>
-          <img src={authImg} alt="armchair" aria-hidden="true" />
+          <img src={authImg} alt='armchair' aria-hidden='true' />
         </div>
         <div className='right-side'>
           <h4>Sign in</h4>
           <form className='form' method='POST' onSubmit={handleSubmit}>
             <div className='form-group'>
-              <label htmlFor="login">Your username or email address</label>
-              <input type="text" id='login' name='login' autoComplete='off' value={currentUser.login} onChange={handleChange} required />
+              <label htmlFor='login'>Your username or email address</label>
+              <input type='text' id='login' name='login' autoComplete='off' value={currentUser.login} onChange={handleChange} required />
             </div>
 
             <div className='form-group'>
-              <label htmlFor="password" className='password'>Password <img src={eye} alt="eye-icon" className='eye-icon' onClick={togglePasswordVisibility} /></label>
+              <label htmlFor='password' className='password'>Password <img src={eye} alt='eye-icon' className='eye-icon' onClick={togglePasswordVisibility} /></label>
               <input type={passwordVisible ? 'text' : 'password'} id='password' name='password' autoComplete='current-password' value={currentUser.password} onChange={handleChange} required />
             </div>
 

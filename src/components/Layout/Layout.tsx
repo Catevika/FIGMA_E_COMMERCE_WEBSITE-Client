@@ -1,7 +1,7 @@
 import { Outlet } from 'react-router-dom';
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
-import NotificationBar from '../NotificationBar/NotificationBar';
+import NotificationBar from '../Navigation/NotificationBar/NotificationBar';
 import './Layout.css';
 
 const Layout = () => {

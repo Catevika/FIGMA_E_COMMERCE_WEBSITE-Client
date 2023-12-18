@@ -22,13 +22,13 @@
   cursor: pointer;
 }
 
-.checkbox input[type="checkbox"] {
+.checkbox input[type='checkbox'] {
   accent-color: var(--clr-very-dark-gray);
   cursor: pointer;
 }
 
 .text-2 {
-  color: var(--clr-gray);
+  color: var(--clr-bluish-gray);
   font-weight: var(--fw-400);
   font-feature-settings: 'clig' off, 'liga' off;
 }

@@ -1,6 +1,5 @@
 .section-content {
   position: relative;
-  margin: 100px 10rem 0;
 }
 
 .home1-hero {
@@ -13,8 +12,12 @@
   gap: 1.5rem;
 }
 
+.home1-hero-text p {
+  text-align: left;
+}
+
 .home1-hero-title span {
-  color: var(--clr-gray);
+  color: var(--clr-bluish-gray);
 }
 
 .home1-link-group {
@@ -32,7 +35,7 @@
 
 .home1-middle-left-side {
   grid-row: 1/ span 2;
-  background-image: url('../../assets/images/home-1/Home-1-Living Room.png');
+  background-image: url('/src/assets/images/home-1/Home-1-Living Room.png');
   background-size: cover;
   background-position: center center;
   width: 100%;
@@ -42,7 +45,7 @@
 .home1-middle-right-side-top {
   grid-column: 2/2;
   grid-row: 1/2;
-  background-image: url('../../assets/images/home-1/Home-1-Bedroom.png');
+  background-image: url('/src/assets/images/home-1/Home-1-Bedroom.png');
   background-size: cover;
   background-position: center center;
   width: 100%;
@@ -51,7 +54,7 @@
 .home1-middle-right-side-bottom {
   grid-column: 2/2;
   grid-row: 2/2;
-  background-image: url('../../assets/images/home-1/Home-1-Kitchen.png');
+  background-image: url('/src/assets/images/home-1/Home-1-Kitchen.png');
   background-size: cover;
   background-position: center center;
   width: 100%;
@@ -172,3 +175,48 @@
 .home-newsletter-link {
   border: none;
 }
+
+@media (max-width: 1275px) {
+  .home1-sales {
+    margin: 0 -5rem;
+  }
+
+  .home-newsletter {
+    margin: 0 -5rem;
+  }
+}
+
+@media (max-width: 1050px) {
+  .home1-sales {
+    margin: 0 -1rem;
+  }
+
+  .home-newsletter {
+    margin: 0 -1rem;
+  }
+
+  .home1-sales-title {
+    font-size: var(--fs-28);
+    line-height: 34px;
+    letter-spacing: -0.6px;
+  }
+
+  .home1-sales-right h4,
+  .home1-sales-right p {
+    width: 85%;
+  }
+}
+
+@media (max-width: 905px) {
+  .home1-hero-title {
+    font-size: var(--fs-40);
+    line-height: 44px;
+    letter-spacing: -0.4px;
+  }
+
+  .home-newsletter {
+    background-image: none;
+  }
+}
+
+@media (max-width: 768px) {}

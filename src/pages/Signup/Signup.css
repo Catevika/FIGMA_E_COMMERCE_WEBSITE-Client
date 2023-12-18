@@ -45,14 +45,14 @@
 .form-group {
   display: flex;
   flex-direction: column;
-  color: var(--clr-gray);
+  color: var(--clr-bluish-gray);
 }
 
 .form-group input {
   border-top: none;
   border-right: none;
   border-left: none;
-  border-bottom-color: var(--clr-gray);
+  border-bottom-color: var(--clr-bluish-gray);
   line-height: 1.75rem;
   padding-left: 1rem;
 }
@@ -63,7 +63,7 @@
 }
 
 .eye-icon {
-  fill: var(--clr-gray);
+  fill: var(--clr-bluish-gray);
   cursor: pointer;
 }
 
@@ -92,6 +92,7 @@
   .content {
     grid-template-columns: 1fr;
     gap: 2.5rem;
+    width: 100%;
   }
 
   .right-side {

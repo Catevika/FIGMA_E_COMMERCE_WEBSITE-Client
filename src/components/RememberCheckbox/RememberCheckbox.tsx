@@ -13,7 +13,7 @@ const RememberCheckbox = () => {
   return (
     <div className='checkbox-container'>
       <div className='checkbox'>
-        <input type="checkbox" id='checkbox' name='checkbox' checked={checked} onChange={handleChange} />
+        <input type='checkbox' id='checkbox' name='checkbox' checked={checked} onChange={handleChange} />
         <label htmlFor='checkbox' className='text-2 remember-me'>Remember me</label>
       </div>
       <p className='text-2 checkbox-text'>Forgot password?</p>

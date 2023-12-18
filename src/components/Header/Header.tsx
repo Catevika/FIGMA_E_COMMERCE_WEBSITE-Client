@@ -1,17 +1,26 @@
+import { useState } from 'react';
+import hamburgerMenu from '../../assets/icons/hamburger-menu.svg';
 import Logo from '../Logo/Logo';
-import Navbar from '../Navbar/Navbar';
+import HamburgerNavbar from '../Navigation/HamburgerNavbar/HamburgerNavbar';
+import Navbar from '../Navigation/Navbar/Navbar';
 import './Header.css';
 
-// TODO Searchbar
-// TODO User profile page
-// TODO Shopping Cart checkout + Shopping Cart page
-// TODO Update according to added product
-
 const Header = () => {
+  const [ hamburgerMenuOpen, setHamburgerMenuOpen ] = useState(false);
+
+  const toggleHamburgerMenu = () => {
+    setHamburgerMenuOpen(!hamburgerMenuOpen);
+  };
+
   return (
     <header className='header-container'>
-      <Logo />
-      <Navbar />
+      <div className='header-content'>
+        <div className='nav-hamburger-container' onClick={toggleHamburgerMenu}>
+          <img src={hamburgerMenu} alt='Hamburger menu icon' />
+        </div>
+        <Logo />
+        {hamburgerMenuOpen ? <HamburgerNavbar toggleHamburgerMenu={toggleHamburgerMenu} /> : <Navbar />}
+      </div>
     </header>
   );
 };

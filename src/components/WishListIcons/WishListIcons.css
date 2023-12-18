@@ -1,0 +1,25 @@
+.wishlist {
+  display: flex;
+}
+
+.wishlist>img {
+  margin-right: 0.25rem;
+}
+
+.wishlist p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wishlist p>img {
+  width: 24px;
+  height: 24px;
+}
+
+.wishlist p span {
+  margin-left: -50%;
+  font-size: var(--fs-14);
+  font-weight: var(--fw-700);
+  color: var(--clr-white);
+}

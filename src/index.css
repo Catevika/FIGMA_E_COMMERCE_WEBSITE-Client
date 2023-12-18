@@ -1,7 +1,4 @@
 :root {
-  /* colors */
-  --clr-black-900: hsl(0, 0%, 7%);
-
   /* primary color */
   --clr-black: hsl(0, 0%, 0%);
 
@@ -12,10 +9,12 @@
   --clr-red: hsl(11, 100%, 59%);
 
   /* neutral */
+  --clr-black-900: hsl(0, 0%, 7%);
   --clr-very-dark-gray: hsl(195, 9%, 9%);
   --clr-dark-gray: hsl(195, 5%, 22%);
   --clr-medium-gray: hsl(192, 5%, 21%);
-  --clr-gray: hsl(200, 4%, 44%);
+  --clr-bluish-gray: hsl(200, 4%, 44%);
+  --clr-gray: hsl(0, 0%, 68%);
   --clr-light-gray: hsl(204, 15%, 96%);
   --clr-very-light-gray: hsl(210, 20%, 96%);
   --clr-white: hsl(0, 0%, 100%);
@@ -84,6 +83,11 @@ button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  background: none;
+  border: none;
   cursor: pointer;
 }
 
@@ -139,6 +143,10 @@ img {
   display: block;
   max-width: 100%;
   max-height: 900px;
+  -o-object-position: center;
+  object-position: center;
+  -o-object-fit: cover;
+  object-fit: cover;
   overflow-y: hidden;
 }
 
@@ -146,11 +154,14 @@ input {
   font-family: inherit;
 }
 
+li {
+  list-style: none;
+}
+
 #root {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-  min-height: 100dvh;
+  min-height: 100svh;
 }
 
 .text-1 {
@@ -163,7 +174,7 @@ input {
 
 .text-1-strikethrough {
   font-weight: 400;
-  color: var(--clr-gray);
+  color: var(--clr-bluish-gray);
   margin-left: 0.75rem;
 }
 
@@ -171,7 +182,7 @@ input {
   font-family: var(--ff-inter);
   font-size: var(--fs-16);
   line-height: 26px;
-  color: var(--clr-gray);
+  color: var(--clr-bluish-gray);
 }
 
 .text-2-link {
@@ -204,7 +215,7 @@ input {
   font-size: var(--fs-14);
   font-weight: 400;
   line-height: 24px;
-  color: var(--clr-gray);
+  color: var(--clr-bluish-gray);
 }
 
 .caption-2 {
@@ -212,7 +223,7 @@ input {
   font-size: var(--fs-14);
   font-weight: 400;
   line-height: 20px;
-  color: var(--clr-gray);
+  color: var(--clr-bluish-gray);
 }
 
 .hero {
@@ -254,7 +265,7 @@ input {
 
 .btn:hover,
 .btn:focus {
-  background-color: var(--clr-gray);
+  background-color: var(--clr-bluish-gray);
 }
 
 .error-container {
@@ -278,6 +289,18 @@ input {
 
 .section-content {
   margin: 100px 10rem 0;
+}
+
+@media (max-width: 1275px) {
+  .section-content {
+    margin: 100px 5rem 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .section-content {
+    margin: 100px 1rem 0;
+  }
 }
 
 @media (max-width: 768px) {

@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import {
   createBrowserRouter,
   RouterProvider,
-} from "react-router-dom";
+} from 'react-router-dom';
 import App from './App.tsx';
 import Layout from './components/Layout/Layout.tsx';
 import './index.css';
@@ -17,21 +17,21 @@ import Signup from './pages/Signup/Signup.tsx';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <App />,
     errorElement: <ErrorPage />
   },
   {
-    path: "/signup",
+    path: '/signup',
     element: <Signup />,
     errorElement: <ErrorPage />
   }, {
-    path: "/signin",
+    path: '/signin',
     element: <Signin />,
     errorElement: <ErrorPage />
   },
   {
-    path: "/home",
+    path: '/home',
     element: <Layout />,
     children: [
       {
@@ -53,17 +53,17 @@ const router = createBrowserRouter([
     ]
   }/* ,
       {
-        path: "/shop",
+        path: '/shop',
         element: <Shop />,
         errorElement: <ErrorPage />
       },
       {
-        path: "/product",
+        path: '/product',
         element: <Product />,
         errorElement: <ErrorPage />
       },
       {
-        path: "/contact",
+        path: '/contact',
         element: <Contact />,
         errorElement: <ErrorPage />
       } */
