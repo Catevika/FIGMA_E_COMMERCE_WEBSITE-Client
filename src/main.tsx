@@ -52,21 +52,31 @@ const router = createBrowserRouter([
       }
     ]
   }/* ,
+  {
+    path: '/shop',
+    element: <Shop />,
+    children: [
       {
-        path: '/shop',
-        element: <Shop />,
-        errorElement: <ErrorPage />
-      },
+        path: '/shop/1',
+        element: <Shop1 />
+      }
+    ]
+  },
+  {
+    path: '/product',
+    element: <Product />,
+    children: [
       {
-        path: '/product',
-        element: <Product />,
-        errorElement: <ErrorPage />
-      },
-      {
-        path: '/contact',
-        element: <Contact />,
-        errorElement: <ErrorPage />
-      } */
+        path: '/product/1',
+        element: <Product1 />
+      }
+    ]
+  },
+  {
+    path: '/contact',
+    element: <Contact />,
+    errorElement: <ErrorPage />
+  } */
 ]
 );
 
