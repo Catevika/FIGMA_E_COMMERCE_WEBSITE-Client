@@ -41,7 +41,6 @@
 }
 
 .mega-menu {
-  color: var(--clr-bluish-gray);
   cursor: pointer;
   transition-duration: 500ms;
 }
