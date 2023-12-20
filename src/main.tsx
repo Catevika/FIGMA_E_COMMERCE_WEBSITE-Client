@@ -11,7 +11,6 @@ import ErrorPage from './pages/ErrorPage/ErrorPage.tsx';
 import { Home1 } from './pages/Home1/Home1.tsx';
 import Home2 from './pages/Home2/Home2.tsx';
 import Home3 from './pages/Home3/Home3.tsx';
-import Home4 from './pages/Home4/Home.tsx';
 import Signin from './pages/Signin/Signin.tsx';
 import Signup from './pages/Signup/Signup.tsx';
 
@@ -45,10 +44,6 @@ const router = createBrowserRouter([
       {
         path: '/home/3',
         element: <Home3 />,
-      },
-      {
-        path: '/home/4',
-        element: <Home4 />,
       }
     ]
   }/* ,

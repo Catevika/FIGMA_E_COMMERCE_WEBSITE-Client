@@ -5,7 +5,6 @@ import NotificationBar from '../Navigation/NotificationBar/NotificationBar';
 import './Layout.css';
 
 const Layout = () => {
-
   return (
     <>
       <NotificationBar />

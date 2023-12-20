@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import arrowrighticon from '../../../assets/icons/arrow-right.svg';
+import arrowrighticon from '../../../assets/icons/arrow-right-icon.svg';
 import { Article } from '../../../types';
 import './ArticleCard.css';
 

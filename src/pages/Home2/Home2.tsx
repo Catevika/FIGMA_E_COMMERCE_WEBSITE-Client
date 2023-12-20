@@ -2,7 +2,9 @@ import './Home2.css';
 
 const Home2 = () => {
   return (
-    <div>Home2</div>
+    <section>
+      Home 2
+    </section>
   );
 };
 

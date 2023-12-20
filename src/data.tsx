@@ -7,9 +7,6 @@ export const homeLinks = [ {
 }, {
   id: 3,
   link: 'Home3'
-}, {
-  id: 4,
-  link: 'Home4'
 } ];
 
 export const heroImages = [

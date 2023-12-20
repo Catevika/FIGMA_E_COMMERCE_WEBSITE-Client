@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import arrowrighticon from '../../../assets/icons/arrow-right.svg';
+import arrowrighticon from '../../../assets/icons/arrow-right-icon.svg';
 import Home1Hero from '../../../assets/images/home-1/Home-1-Hero.png';
 import Home1Sales from '../../../assets/images/home-1/Home-1-Sales.png';
 import { homeLinks } from '../../../data';
