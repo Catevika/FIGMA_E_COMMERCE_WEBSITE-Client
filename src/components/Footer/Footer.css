@@ -74,8 +74,8 @@
 }
 
 @media (max-width: 810px) {
-  .footer-container {
-    margin-bottom: -2.5rem;
+  .footer-content {
+    margin: 3rem 2rem 3rem;
   }
 
   .footer-top {

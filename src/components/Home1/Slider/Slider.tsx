@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import arrowPrev from '../../../assets/icons/arrow-left.svg';
-import arrowNext from '../../../assets/icons/arrow-right-icon.svg';
+import arrowNext from '../../../assets/icons/arrow-right.svg';
 import { heroImages } from '../../../data';
 import './Slider.css';
 

@@ -6,8 +6,8 @@
 }
 
 .footer-nav-link:hover,
-.footer-nav-link:focus,
-.footer-nav-link:active {
+.footer-nav-link:focus-within,
+.footer-nav-link.active {
   color: var(--clr-bluish-gray);
 }
 

@@ -17,7 +17,7 @@ const Header = () => {
 
   let backgroundStyle;
   if (location.pathname.includes('home/2')) {
-    backgroundStyle = { 'backgroundColor': 'var(--clr-orange)' };
+    backgroundStyle = { 'backgroundColor': 'transparent' };
   } else {
     backgroundStyle = { 'backgroundColor': 'var(--clr-white)' };
   }
