@@ -140,14 +140,19 @@
   margin-bottom: 2.5rem;
 }
 
+.home-newsletter-container {
+  background-image: url('/src/assets/images/home-1/Home-1-Newsletter-1.png');
+  background-repeat: no-repeat;
+  margin: 0 -10rem;
+}
+
 .home-newsletter {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  margin: 0 -10rem;
-  background-image: url('/src/assets/images/home-1/Home-1-Newsletter-1.png');
+  height: 360px;
 }
 
 .home-newsletter-top-text h4 {

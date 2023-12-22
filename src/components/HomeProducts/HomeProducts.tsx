@@ -1,9 +1,13 @@
-import { products } from '../../../data.tsx';
-import ProductCard from '../ProductCard/ProductCard.tsx';
+import { Product } from '../../types.tsx';
+import ProductCard from '../Home1/ProductCard/ProductCard.tsx';
 import './HomeProducts.css';
 
+type Props = {
+  products: Product[];
+};
 
-const HomeProducts = () => {
+
+const HomeProducts = ({ products }: Props) => {
   return (
     <div className='home1-products-container'>
       <div className='home1-products-content'>

@@ -7,6 +7,10 @@ export const homeLinks = [ {
 }, {
   id: 3,
   link: 'Home3'
+},
+{
+  id: 4,
+  link: 'Home4'
 } ];
 
 export const heroImages = [
@@ -119,5 +123,32 @@ export const articles = [
     id: 3,
     articleUrl: '/src/assets/images/home-1/Home-1-Article-3.png',
     title: 'Decor your bedroom'
+  }
+];
+
+export const logos = [
+  {
+    id: 1,
+    logoUrl: '/src/assets/images/home-2/logo-01.svg'
+  },
+  {
+    id: 2,
+    logoUrl: '/src/assets/images/home-2/logo-02.svg'
+  },
+  {
+    id: 3,
+    logoUrl: '/src/assets/images/home-2/logo-03.svg'
+  },
+  {
+    id: 4,
+    logoUrl: '/src/assets/images/home-2/logo-04.svg'
+  },
+  {
+    id: 5,
+    logoUrl: '/src/assets/images/home-2/logo-05.svg'
+  },
+  {
+    id: 6,
+    logoUrl: '/src/assets/images/home-2/logo-01.svg'
   }
 ];

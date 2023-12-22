@@ -1,8 +1,12 @@
-import { services } from '../../../data';
-import ServiceCard from '../ServiceCard/ServiceCard';
+import { Service } from '../../types.tsx';
+import ServiceCard from '../Home1/ServiceCard/ServiceCard.tsx';
 import './HomeServices.css';
 
-const HomeServices = () => {
+type Props = {
+  services: Service[];
+};
+
+const HomeServices = ({ services }: Props) => {
   return (
     <div className='home1-services-container'>
       <div className='home1-services-content label-2'>

@@ -4,12 +4,13 @@ import arrowrighticon from '../../assets/icons/arrow-right-icon.svg';
 import emailIcon from '../../assets/icons/email-icon.svg';
 import homeSales from '../../assets/images/home-1/Home-1-Sales.png';
 import HomeArticles from '../../components/Home1/HomeArticles/HomeArticles.tsx';
-import HomeProducts from '../../components/Home1/HomeProducts/HomeProducts.tsx';
-import HomeServices from '../../components/Home1/HomeServices/HomeServices.tsx';
 import Slider from '../../components/Home1/Slider/Slider.tsx';
+import HomeProducts from '../../components/HomeProducts/HomeProducts.tsx';
+import HomeServices from '../../components/HomeServices/HomeServices.tsx';
+import { products, services } from '../../data.tsx';
 import './Home1.css';
 
-export const Home1 = () => {
+const Home1 = () => {
   const [ newsletterEmail, setNewsletterEmail ] = useState('');
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -51,8 +52,8 @@ export const Home1 = () => {
           <Link to='#' className='home1-link btn-small'>More Products<img src={arrowrighticon} alt='arrow-right icon' /></Link>
         </div>
       </div>
-      <HomeProducts />
-      <HomeServices />
+      <HomeProducts products={products} />
+      <HomeServices services={services} />
       <div className='home1-sales'>
         <div className='home1-sales-left'><img src={homeSales} alt='Living room' /></div>
         <div className='home1-sales-right'>
@@ -69,19 +70,23 @@ export const Home1 = () => {
         </div>
         <HomeArticles />
       </div>
-      <div className='home-newsletter'>
-        <div className='home-newsletter-top-text'>
-          <h4>Join Our Newsletter</h4>
-          <p>Sign up for deals, new products and promotions</p>
-        </div>
-        <div className='home-newsletter-bottom-email'>
-          <form className='home-newsletter-bottom-email-form' method='POST'>
-            <label htmlFor='email'><img src={emailIcon} alt='Email icon' />&nbsp;<input type='email' id='email' name='email' autoComplete='email' placeholder='Email address' value={newsletterEmail} onChange={handleChange} /></label>
-            <button type='submit'>Submit</button>
-          </form>
-          <Link to='/signup' className='home1-link btn-small home-newsletter-link'>Signup</Link>
+      <div className='home-newsletter-container'>
+        <div className='home-newsletter'>
+          <div className='home-newsletter-top-text'>
+            <h4>Join Our Newsletter</h4>
+            <p>Sign up for deals, new products and promotions</p>
+          </div>
+          <div className='home-newsletter-bottom-email'>
+            <form className='home-newsletter-bottom-email-form' method='POST'>
+              <label htmlFor='email'><img src={emailIcon} alt='Email icon' />&nbsp;<input type='email' id='email' name='email' autoComplete='email' placeholder='Email address' value={newsletterEmail} onChange={handleChange} /></label>
+              <button type='submit'>Submit</button>
+            </form>
+            <Link to='/signup' className='home1-link btn-small home-newsletter-link'>Signup</Link>
+          </div>
         </div>
       </div>
     </section>
   );
 };
+
+export default Home1;
