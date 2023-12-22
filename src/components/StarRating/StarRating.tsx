@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import starBlack from '../../../assets/icons/star-icon-black.svg';
-import starGold from '../../../assets/icons/star-icon-gold.svg';
+import starBlack from '../../assets/icons/star-icon-black.svg';
+import starGold from '../../assets/icons/star-icon-gold.svg';
 import './StarRating.css';
 
 const StarRating = () => {

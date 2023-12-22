@@ -1,8 +1,12 @@
-import { articles } from '../../../data';
+import { Article } from '../../types';
 import ArticleCard from '../ArticleCard/ArticleCard';
 import './HomeArticles.css';
 
-const HomeArticles = () => {
+type Props = {
+  articles: Article[];
+};
+
+const HomeArticles = ({ articles }: Props) => {
   return (
     <div className='home1-articles-container'>
       <div className='home1-articles-content'>

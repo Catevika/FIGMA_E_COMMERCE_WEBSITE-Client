@@ -3,12 +3,13 @@ import { Link } from 'react-router-dom';
 import arrowrighticon from '../../assets/icons/arrow-right-icon.svg';
 import emailIcon from '../../assets/icons/email-icon.svg';
 import homeSales from '../../assets/images/home-1/Home-1-Sales.png';
-import HomeArticles from '../../components/Home1/HomeArticles/HomeArticles.tsx';
 import Slider from '../../components/Home1/Slider/Slider.tsx';
+import HomeArticles from '../../components/HomeArticles/HomeArticles.tsx';
 import HomeProducts from '../../components/HomeProducts/HomeProducts.tsx';
 import HomeServices from '../../components/HomeServices/HomeServices.tsx';
-import { products, services } from '../../data.tsx';
+import { articles, products, services } from '../../data.tsx';
 import './Home1.css';
+
 
 const Home1 = () => {
   const [ newsletterEmail, setNewsletterEmail ] = useState('');
@@ -68,7 +69,7 @@ const Home1 = () => {
           <h4>Articles</h4>
           <Link to='#' className='home1-link btn-small'>More Articles<img src={arrowrighticon} alt='arrow-right icon' /></Link>
         </div>
-        <HomeArticles />
+        <HomeArticles articles={articles} />
       </div>
       <div className='home-newsletter-container'>
         <div className='home-newsletter'>

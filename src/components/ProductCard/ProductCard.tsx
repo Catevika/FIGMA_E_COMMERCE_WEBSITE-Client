@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import favoriteIconBlack from '../../../assets/icons/heart-icon-black.svg';
-import favoriteIconWhite from '../../../assets/icons/heart-icon-white.svg';
-import { Product } from '../../../types';
+import favoriteIconBlack from '../../assets/icons/heart-icon-black.svg';
+import favoriteIconWhite from '../../assets/icons/heart-icon-white.svg';
+import { Product } from '../../types';
 import StarRating from '../StarRating/StarRating';
 import './ProductCard.css';
 

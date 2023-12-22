@@ -1,5 +1,5 @@
 import { Service } from '../../types.tsx';
-import ServiceCard from '../Home1/ServiceCard/ServiceCard.tsx';
+import ServiceCard from '../ServiceCard/ServiceCard.tsx';
 import './HomeServices.css';
 
 type Props = {

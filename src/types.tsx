@@ -11,16 +11,12 @@ export type Product = {
   oldPrice: number | undefined;
 };
 
-export type Products = Product[];
-
 export type Service = {
   id: number,
   iconUrl: string,
   title: string,
   description: string;
 };
-
-export type Services = Service[];
 
 export type Article = {
   id: number,

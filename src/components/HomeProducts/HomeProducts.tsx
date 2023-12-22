@@ -1,5 +1,5 @@
 import { Product } from '../../types.tsx';
-import ProductCard from '../Home1/ProductCard/ProductCard.tsx';
+import ProductCard from '../ProductCard/ProductCard.tsx';
 import './HomeProducts.css';
 
 type Props = {
