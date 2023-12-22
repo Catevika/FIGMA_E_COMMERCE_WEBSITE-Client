@@ -10,7 +10,7 @@ type Props = {
 };
 
 const ProductCard = ({ product }: Props) => {
-  const { url, newItem, percent, buttonLabel, name, price, oldPrice } = product;
+  const { url, newItem, hotItem, percent, buttonLabel, name, description, price, oldPrice } = product;
 
   const [ isFavorite, setIsFavorite ] = useState(false);
   const toggleFavorite = () => setIsFavorite(!isFavorite);
@@ -21,17 +21,18 @@ const ProductCard = ({ product }: Props) => {
         <img src={url} alt={name} />
         <div className='product-card-labels-container'>
           <p className='product-card-labels-top'>
-            {newItem ? <span className='product-card-new-label label-1'>New</span> : null}
+            {newItem ? <span className='product-card-new-label label-1'>New</span> : hotItem ? <span className='product-card-new-label label-1'>Hot</span> : null}
             <span className='product-card-favorite-icon' onClick={toggleFavorite}>{isFavorite ? <img src={favoriteIconBlack} /> : <img src={favoriteIconWhite} />}</span>
           </p>
-          <p className='product-card-percent-label label-1'>{percent}&#37;</p>
+          {percent ? <p className='product-card-percent-label label-1'>{percent}&#37;</p> : null}
           <button className='product-card-button btn-small'>{buttonLabel}</button>
         </div>
       </div>
       <div className='product-card-bottom'>
         <StarRating />
         <p className='text-1'>{name}</p>
-        <p className='text-1'>${price.toFixed(2)} <s className='text-1-strikethrough'>${oldPrice?.toFixed(2)}</s></p>
+        {description ? <p className='text-1'>{description}</p> : null}
+        <p className='text-1'>${price.toFixed(2)} {oldPrice ? <s className='text-1-strikethrough'>${oldPrice.toFixed(2)}</s> : null}</p>
       </div>
     </>
   );

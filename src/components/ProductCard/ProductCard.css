@@ -18,7 +18,8 @@
 .product-card-labels-top {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  height: 100%;
 }
 
 .product-card-new-label {
@@ -32,6 +33,7 @@
   background-color: var(--clr-white);
   padding: 6px;
   border-radius: 50%;
+  box-shadow: 0px 8px 16px -8px rgba(15, 15, 15, 0.12);
 }
 
 .product-card-percent-label {
@@ -43,7 +45,7 @@
 }
 
 .product-card-button {
-  margin-top: 12rem;
+  margin-top: 12.7rem;
   padding: 6px 24px;
   color: var(--clr-white);
   background-color: var(--clr-dark-gray);

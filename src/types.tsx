@@ -4,9 +4,11 @@ export type Product = {
   id: number,
   url: string,
   newItem: boolean,
+  hotItem: boolean,
   percent: number | undefined,
   buttonLabel: string,
   name: string,
+  description: string | undefined,
   price: number,
   oldPrice: number | undefined;
 };

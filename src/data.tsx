@@ -33,9 +33,11 @@ export const products = [
     id: 1,
     url: '/src/assets/images/home-1/Home-1-Loveseat.png',
     newItem: true,
+    hotItem: false,
     percent: -50,
     buttonLabel: 'Add to cart',
     name: 'LoveSeat Sofa',
+    description: undefined,
     price: 199.99,
     oldPrice: 400.00
   },
@@ -43,9 +45,11 @@ export const products = [
     id: 2,
     url: '/src/assets/images/home-1/Home-1-Table Lamp.png',
     newItem: true,
+    hotItem: false,
     percent: -50,
     buttonLabel: 'Add to cart',
     name: 'Table Lamp',
+    description: undefined,
     price: 24.99,
     oldPrice: 50.00
   },
@@ -53,9 +57,11 @@ export const products = [
     id: 3,
     url: '/src/assets/images/home-1/Home-1-Beige Table Lamp.png',
     newItem: true,
+    hotItem: false,
     percent: -50,
     buttonLabel: 'Add to cart',
     name: 'Beige Table Lamp',
+    description: undefined,
     price: 24.99,
     oldPrice: 50.00
   },
@@ -63,9 +69,11 @@ export const products = [
     id: 4,
     url: '/src/assets/images/home-1/Home-1-Bamboo Basket.png',
     newItem: true,
+    hotItem: false,
     percent: -50,
     buttonLabel: 'Add to cart',
     name: 'Bamboo Basket',
+    description: undefined,
     price: 24.99,
     oldPrice: 50.00
   },
@@ -73,9 +81,11 @@ export const products = [
     id: 5,
     url: '/src/assets/images/home-1/Home-1-Toaster.png',
     newItem: true,
+    hotItem: false,
     percent: -50,
     buttonLabel: 'Add to cart',
     name: 'Toaster',
+    description: undefined,
     price: 54.99,
     oldPrice: 100.00
   }
@@ -151,4 +161,103 @@ export const logos = [
     id: 6,
     logoUrl: '/src/assets/images/home-2/logo-01.svg'
   }
+];
+
+export const home2Products = [
+  {
+    id: 1,
+    url: '/src/assets/images/home-2/headband-1.png',
+    newItem: false,
+    hotItem: true,
+    percent: undefined,
+    buttonLabel: 'Add to cart',
+    name: 'Skullcandy',
+    description: 'Crusher anc 2 wireless headphones',
+    price: 299.99,
+    oldPrice: undefined
+  },
+  {
+    id: 2,
+    url: '/src/assets/images/home-2/headband-2.png',
+    newItem: false,
+    hotItem: true,
+    percent: undefined,
+    buttonLabel: 'Add to cart',
+    name: 'Beats',
+    description: 'Studio Pro',
+    price: 349.99,
+    oldPrice: undefined
+  },
+  {
+    id: 3,
+    url: '/src/assets/images/home-2/headband-3.png',
+    newItem: false,
+    hotItem: true,
+    percent: undefined,
+    buttonLabel: 'Add to cart',
+    name: 'Sony - WH-CH720N Wireless',
+    description: 'Noise Canceling',
+    price: 149.99,
+    oldPrice: undefined
+  },
+  {
+    id: 4,
+    url: '/src/assets/images/home-2/earbuds-1.png',
+    newItem: false,
+    hotItem: true,
+    percent: undefined,
+    buttonLabel: 'Add to cart',
+    name: 'Skullcandy - Rail True Wireless',
+    description: 'Earbuds',
+    price: 79.99,
+    oldPrice: undefined
+  },
+  {
+    id: 5,
+    url: '/src/assets/images/home-2/earbuds-2.png',
+    newItem: false,
+    hotItem: true,
+    percent: undefined,
+    buttonLabel: 'Add to cart',
+    name: 'Beats',
+    description: 'Studio Pro',
+    price: 224.99,
+    oldPrice: undefined
+  },
+  {
+    id: 6,
+    url: '/src/assets/images/home-2/earbuds-3.png',
+    newItem: false,
+    hotItem: true,
+    percent: undefined,
+    buttonLabel: 'Add to cart',
+    name: 'JBL Reflect Flow Pro + Bluetooth',
+    description: 'Truly Wireless Sports',
+    price: 179.95,
+    oldPrice: undefined
+  },
+  {
+    id: 7,
+    url: '/src/assets/images/home-2/headband-4.png',
+    newItem: false,
+    hotItem: true,
+    percent: undefined,
+    buttonLabel: 'Add to cart',
+    name: 'Bose',
+    description: 'QuietComfort Headphones',
+    price: 349.00,
+    oldPrice: undefined
+  },
+  {
+    id: 8,
+    url: '/src/assets/images/home-2/headband-5.png',
+    newItem: false,
+    hotItem: true,
+    percent: undefined,
+    buttonLabel: 'Add to cart',
+    name: 'AKG',
+    description: 'Y600NC Wireless',
+    price: 349.99,
+    oldPrice: undefined
+  },
 ];
