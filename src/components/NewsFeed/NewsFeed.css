@@ -1,0 +1,37 @@
+.newsFeed-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  margin: 2.5rem 0;
+  width: 100%;
+}
+
+.newsFeed-texts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.newsFeed-images {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.newsFeed.label-1,
+.newsFeed.label-2 {
+  color: var(--clr-blueish-gray);
+}
+
+.newsFeed.text-3 {
+  text-align: center;
+}
+
+@media(max-width:768px) {
+  .newsFeed-images {
+    flex-direction: column;
+  }
+}

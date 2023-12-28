@@ -25,3 +25,13 @@ export type Article = {
   articleUrl: string,
   title: string;
 };
+
+export type NewsFeedImage = {
+  id: number,
+  url: string;
+};
+
+export type Logo = {
+  id: number,
+  url: string;
+};

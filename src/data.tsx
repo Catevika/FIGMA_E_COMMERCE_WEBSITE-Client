@@ -139,27 +139,27 @@ export const articles = [
 export const logos = [
   {
     id: 1,
-    logoUrl: '/src/assets/images/home-2/logo-01.svg'
+    url: '/src/assets/images/home-2/logo-01.svg'
   },
   {
     id: 2,
-    logoUrl: '/src/assets/images/home-2/logo-02.svg'
+    url: '/src/assets/images/home-2/logo-02.svg'
   },
   {
     id: 3,
-    logoUrl: '/src/assets/images/home-2/logo-03.svg'
+    url: '/src/assets/images/home-2/logo-03.svg'
   },
   {
     id: 4,
-    logoUrl: '/src/assets/images/home-2/logo-04.svg'
+    url: '/src/assets/images/home-2/logo-04.svg'
   },
   {
     id: 5,
-    logoUrl: '/src/assets/images/home-2/logo-05.svg'
+    url: '/src/assets/images/home-2/logo-05.svg'
   },
   {
     id: 6,
-    logoUrl: '/src/assets/images/home-2/logo-01.svg'
+    url: '/src/assets/images/home-2/logo-01.svg'
   }
 ];
 
@@ -259,5 +259,24 @@ export const home2Products = [
     description: 'Y600NC Wireless',
     price: 349.99,
     oldPrice: undefined
+  }
+];
+
+export const Home2NewsFeedImages = [
+  {
+    id: 1,
+    url: '/src/assets/images/home-2/headband-person-2.png'
   },
+  {
+    id: 2,
+    url: '/src/assets/images/home-2/headband-person-3.png'
+  },
+  {
+    id: 3,
+    url: '/src/assets/images/home-2/headband-person-4.png'
+  },
+  {
+    id: 4,
+    url: '/src/assets/images/home-2/headband-6.png'
+  }
 ];

@@ -6,7 +6,6 @@ type Props = {
   products: Product[];
 };
 
-
 const HomeProducts = ({ products }: Props) => {
   return (
     <div className='home1-products-container'>

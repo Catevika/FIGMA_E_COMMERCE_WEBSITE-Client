@@ -1,0 +1,5 @@
+.show-counter {
+  display: flex;
+  gap: 1rem;
+  width: 50%;
+}

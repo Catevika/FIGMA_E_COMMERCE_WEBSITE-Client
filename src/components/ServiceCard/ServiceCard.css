@@ -1,5 +1,13 @@
-.service-card-container {
-  min-width: 262px;
+.service-card {
+  width: 262px;
+  height: 152px;
   padding: 3rem 2rem;
   background-color: var(--clr-light-gray);
+}
+
+@media(max-width:768px) {
+  .service-card {
+    width: 152px;
+    padding: 2rem 1rem;
+  }
 }

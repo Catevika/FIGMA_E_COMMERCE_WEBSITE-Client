@@ -7,9 +7,9 @@ type Props = {
 const ServiceCard = ({ service }: Props) => {
   const { iconUrl, title, description } = service;
   return (
-    <div className='service-card-container'>
+    <div className='service-card'>
       <img src={iconUrl} alt='Shipping icon' />
-      <p>{title}</p>
+      <p className='label-2'>{title}</p>
       <p className='caption-1'>{description}</p>
     </div>
   );

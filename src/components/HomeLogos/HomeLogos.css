@@ -1,0 +1,40 @@
+/* .homeLogos-content::-webkit-scrollbar {
+  display: block;
+  width: 80%;
+  height: 3px;
+  background-color: var(--clr-light-gray);
+}
+
+.homeLogos-content::-webkit-scrollbar-thumb {
+  background: var(--clr-black-900);
+} */
+
+.homeLogos-content::-webkit-scrollbar {
+  display: none;
+}
+
+.homeLogos-content {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1.5rem;
+  overflow-x: scroll;
+  cursor: auto;
+}
+
+.homeLogos-logo {
+  flex-shrink: 0;
+  width: 167px;
+  height: 64px;
+}
+
+.slider-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.slider-icon img {
+  width: 24px;
+  height: 24px;
+}
