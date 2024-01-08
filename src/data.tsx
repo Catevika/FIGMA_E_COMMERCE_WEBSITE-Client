@@ -280,3 +280,185 @@ export const Home2NewsFeedImages = [
     url: '/src/assets/images/home-2/headband-6.png'
   }
 ];
+
+export const home3FeaturedProducts = [
+  {
+    id: 1,
+    url: '/src/assets/images/home-3/Home-3-featured-1.png',
+    newItem: false,
+    hotItem: true,
+    percent: undefined,
+    buttonLabel: 'Add to cart',
+    name: 'Shark',
+    description: 'Men\'s cabretta white golf glove',
+    price: 19.00,
+    oldPrice: undefined
+  },
+  {
+    id: 2,
+    url: '/src/assets/images/home-3/Home-3-featured-2.png',
+    newItem: false,
+    hotItem: true,
+    percent: -50,
+    buttonLabel: 'Add to cart',
+    name: 'Greg Norman',
+    description: 'Men\'s Shark Logo Golf Polo Shirt',
+    price: 24.99,
+    oldPrice: 50.00
+  },
+  {
+    id: 3,
+    url: '/src/assets/images/home-3/Home-3-featured-3.png',
+    newItem: false,
+    hotItem: true,
+    percent: undefined,
+    buttonLabel: 'Add to cart',
+    name: 'G/FORE',
+    description: 'Mens Left Glove Snow 2023',
+    price: 30.00,
+    oldPrice: undefined
+  },
+  {
+    id: 4,
+    url: '/src/assets/images/home-3/Home-3-featured-4.png',
+    newItem: false,
+    hotItem: true,
+    percent: undefined,
+    buttonLabel: 'Add to cart',
+    name: 'Utility Rover',
+    description: 'R Double Strap Bag All Black - 2023',
+    price: 209.99,
+    oldPrice: undefined
+  },
+  {
+    id: 5,
+    url: '/src/assets/images/home-3/Home-3-featured-5.png',
+    newItem: false,
+    hotItem: true,
+    percent: -50,
+    buttonLabel: 'Add to cart',
+    name: 'Air Jordan 1',
+    description: 'Low G Black/Black/Iron Grey - SS23',
+    price: 111.99,
+    oldPrice: 224
+  }
+];
+
+export const categories = [
+  {
+    id: 1,
+    url: '/src/assets/images/home-3/Home-3-category-1.png',
+    name: 'Golf Clubs'
+  },
+  {
+    id: 2,
+    url: '/src/assets/images/home-3/Home-3-category-2.png',
+    name: 'Golf Balls'
+  },
+  {
+    id: 3,
+    url: '/src/assets/images/home-3/Home-3-category-3.png',
+    name: 'Golf Bags'
+  },
+  {
+    id: 4,
+    url: '/src/assets/images/home-3/Home-3-category-4.png',
+    name: 'Clothing & Rainwear'
+  },
+  {
+    id: 5,
+    url: '/src/assets/images/home-3/Home-3-category-5.png',
+    name: 'Footwear'
+  },
+  {
+    id: 6,
+    url: '/src/assets/images/home-3/Home-3-category-6.png',
+    name: 'Accessories'
+  }
+];
+
+export const home3Articles = [
+  {
+    id: 1,
+    articleUrl: '/src/assets/images/home-3/Home-3-article-1.png',
+    title: '7 ways to decor your home'
+  },
+  {
+    id: 2,
+    articleUrl: '/src/assets/images/home-3/Home-3-article-2.png',
+    title: 'Kitchen organisation'
+  },
+  {
+    id: 3,
+    articleUrl: '/src/assets/images/home-3/Home-3-article-3.png',
+    title: 'Decor your bedroom'
+  }
+];
+
+export const Home3NewsFeedImages = [
+  {
+    id: 1,
+    url: '/src/assets/images/home-3/Home-3-instagram-1.png'
+  },
+  {
+    id: 2,
+    url: '/src/assets/images/home-3/Home-3-instagram-2.png'
+  },
+  {
+    id: 3,
+    url: '/src/assets/images/home-3/Home-3-instagram-3.png'
+  },
+  {
+    id: 4,
+    url: '/src/assets/images/home-3/Home-3-instagram-4.png'
+  },
+  {
+    id: 5,
+    url: '/src/assets/images/home-3/Home-3-instagram-5.png'
+  },
+  {
+    id: 6,
+    url: '/src/assets/images/home-3/Home-3-instagram-6.png'
+  }
+];
+
+export const paymentIcons = [
+  {
+    id: 1,
+    url: '/src/assets/icons/payment-icon-1.svg',
+    name: 'VISA'
+  },
+  {
+    id: 2,
+    url: '/src/assets/icons/payment-icon-2.svg',
+    name: 'American Express'
+  },
+  {
+    id: 3,
+    url: '/src/assets/icons/payment-icon-3.svg',
+    name: 'MasterCard'
+  },
+  {
+    id: 4,
+    url: '/src/assets/icons/payment-icon-4.svg',
+    name: 'Stripe'
+  },
+  {
+    id: 5,
+    url: '/src/assets/icons/payment-icon-5.svg',
+    name: 'Paypal'
+  },
+  {
+    id: 6,
+    url: '/src/assets/icons/payment-icon-6.svg',
+    name: 'Apple Pay'
+  }
+];
+
+export const contact = {
+  address1: '43111 Hai Trieu street,',
+  address2: 'District 1,',
+  postalCode: 'HCMC',
+  country: 'Vietnam',
+  phoneNumber: '84-756-3237'
+};

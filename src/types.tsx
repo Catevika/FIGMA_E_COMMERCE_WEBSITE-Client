@@ -35,3 +35,10 @@ export type Logo = {
   id: number,
   url: string;
 };
+
+export type Category = {
+  id: number,
+  url: string,
+  name: string;
+};
+

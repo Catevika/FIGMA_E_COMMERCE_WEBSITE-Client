@@ -1,6 +1,7 @@
 .footer-container {
   color: var(--clr-white);
   background-color: var(--clr-very-dark-gray);
+  width: 100%;
 }
 
 .footer-content {
@@ -67,7 +68,7 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 975px) {
   .footer-content {
     margin: 5rem 2rem 2rem;
   }

@@ -89,7 +89,7 @@
 .home2-middle-bottom-container {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 2rem;
   width: 100%;
 }
 
@@ -175,9 +175,9 @@
 }
 
 .home2-newsletter-container {
+  margin: 0 -10rem;
   background-image: url('/src/assets/images/home-2/Home-2-Newsletter.png');
   background-repeat: no-repeat;
-  margin: 0 -10rem;
 }
 
 @media(max-width: 1275px) {
@@ -187,6 +187,10 @@
 
   .homeLogos-container,
   .home2-sales {
+    margin: 0 -5rem;
+  }
+
+  .home2-newsletter-container {
     margin: 0 -5rem;
   }
 
@@ -205,18 +209,20 @@
     margin: 0 -2rem;
   }
 
+  .home1-newsletter-container {
+    margin: 0 -2rem;
+  }
+
   .home2-sales {
     gap: 2.5rem;
   }
-
-  .home2-sales h4 {
-    font-size: var(--fs-34);
-    line-height: 38px;
-    letter-spacing: -0.6px;
-  }
 }
 
-@media(max-width: 920px) {
+@media(max-width: 995px) {
+  .home1-newsletter-container {
+    margin: 0 2rem;
+  }
+
   .home2-sales {
     flex-direction: column-reverse;
     gap: 0;
@@ -251,12 +257,6 @@
     gap: 1rem;
   }
 
-  .home2-hero-text h1 {
-    font-size: var(--fs-40);
-    line-height: 44px;
-    letter-spacing: -0.4px;
-  }
-
   .home2-hero-text .label-2 {
     font-size: var(--fs-16);
   }
@@ -277,10 +277,12 @@
   .home2-middle-right-side-top {
     grid-column: auto;
     grid-row: auto;
+    aspect-ratio: 3/2;
   }
 
   .home2-middle-right-side-bottom {
     grid-column: auto;
     grid-row: auto;
+    aspect-ratio: 3/2;
   }
 }

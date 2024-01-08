@@ -314,6 +314,18 @@ li {
 }
 
 @media (max-width: 768px) {
+  h1 {
+    font-size: var(--fs-40);
+    line-height: 44px;
+    letter-spacing: -0.4px;
+  }
+
+  h4 {
+    font-size: var(--fs-28);
+    line-height: 34px;
+    letter-spacing: -0.6px;
+  }
+
   .label-2 {
     font-size: var(--fs-14);
     line-height: 22px;

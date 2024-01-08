@@ -33,5 +33,6 @@
 @media(max-width:768px) {
   .newsFeed-images {
     flex-direction: column;
+    width: 100%;
   }
 }

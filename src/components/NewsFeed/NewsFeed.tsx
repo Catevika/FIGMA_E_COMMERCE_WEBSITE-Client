@@ -15,7 +15,7 @@ const NewsFeed = ({ Home2NewsFeedImages }: Props) => {
         <p className='newsFeed text-3'>Follow us on social media for more discount & promotions</p>
         <p className="newsFeed label-2">@3legant_official</p>
       </div>
-      <div className='newsFeed-images'>{Home2NewsFeedImages.map(image => <img src={image.url} key={image.id} alt={`Person-${image.id} with a headband`} />)}</div>
+      <div className='newsFeed-images'>{Home2NewsFeedImages.map(image => <img src={image.url} key={image.id} alt={`Person-${image.id}`} />)}</div>
     </div>
   );
 };

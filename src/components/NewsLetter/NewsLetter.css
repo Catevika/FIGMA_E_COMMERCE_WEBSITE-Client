@@ -38,10 +38,6 @@
   border-bottom: 1px solid var(--clr-black-900);
 }
 
-.home-newsletter-bottom-email-form form {
-  width: 100%;
-}
-
 .home-newsletter-bottom-email-form label {
   display: flex;
   width: 100%;
@@ -49,6 +45,8 @@
 
 .home-newsletter-bottom-email-form img {
   display: inline;
+  width: 24px;
+  height: 24px;
   margin-right: 0.5rem;
 }
 
@@ -88,19 +86,19 @@
   font-weight: var(--fw-600);
 }
 
-.home-newsletter-link:hover,
-.home-newsletter-link:focus-visible,
-.home-newsletter-link:active {
-  font-weight: var(--fw-600);
-  background-color: var(--clr-gray);
-  border-radius: 6px;
-}
-
 .home-newsletter-link {
   margin-left: 2rem;
   padding: 0.3rem 0.5rem;
   border: none;
   cursor: pointer;
+}
+
+.home-newsletter-link:hover,
+.home-newsletter-link:focus-visible,
+.home-newsletter-link:active {
+  font-weight: var(--fw-600);
+  background-color: var(--clr-light-gray);
+  border-radius: 6px;
 }
 
 @media (max-width: 905px) {
@@ -113,16 +111,11 @@
 
   .home-newsletter-bottom-email {
     justify-content: space-between;
-    width: 100%;
+    width: 62%;
   }
 }
 
-@media(max-width:768px) {
-  .home-newsletter-top-text h4 {
-    font-size: var(--fs-28);
-    line-height: 34px;
-    letter-spacing: -0.6px;
-  }
+@media(max-width: 768px) {
 
   .home-newsletter-top-text p {
     font-size: var(--fs-14);
@@ -131,6 +124,7 @@
 
   .home-newsletter-bottom-email {
     flex-direction: column;
+    width: 70%;
     gap: 1rem;
   }
 }

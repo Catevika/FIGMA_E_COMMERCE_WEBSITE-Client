@@ -12,11 +12,26 @@ import { Home2NewsFeedImages, home2Products, logos, services } from '../../data'
 import './Home2.css';
 
 const Home2 = () => {
-  // Promotion ends in 3 days from now
-  const THREE_DAYS_IN_MS = 3 * 24 * 60 * 60 * 1000;
-  const NOW_IN_MS = new Date().getTime();
+  const startDate = '01/05/2024';
+  const endDate = '01/15/2024';
 
-  const dateTimeAfterThreeDays = NOW_IN_MS + THREE_DAYS_IN_MS;
+  const now = new Date();
+  const nowMs = now.getTime();
+
+  const startDateInDateFormat = new Date(startDate);
+  const startDateMs = startDateInDateFormat.getTime();
+
+  const endDateInDateFormat = new Date(endDate);
+  const endDateMs = endDateInDateFormat.getTime();
+
+  let targetDate;
+  startDateMs > nowMs ? targetDate = startDateMs : targetDate = endDateMs;
+
+  // Promotion ends in 3 days from now
+  // const THREE_DAYS_IN_MS = 3 * 24 * 60 * 60 * 1000;
+  // const NOW_IN_MS = new Date().getTime();
+
+  // const dateTimeAfterThreeDays = NOW_IN_MS + THREE_DAYS_IN_MS;
 
   return (
     <section className='section-content'>
@@ -76,8 +91,8 @@ const Home2 = () => {
           <p className='label-1 btn-blue home2-sales-top-text'>Promotion</p>
           <h4 className='home2-sales-title'><span>Hurry up! 40% OFF</span></h4>
           <p className='text-3'>Thousands of high tech products are waiting for you</p>
-          <p>Offer expires in:</p>
-          <CountDownTimer targetDate={dateTimeAfterThreeDays} />
+          {startDateMs > nowMs ? <p>Offer starts in:</p> : <p>Offer expires in:</p>}
+          <CountDownTimer targetDate={targetDate} />
           <Link to='#' className='btn btn-small'>Shop Now </Link>
         </div>
       </div>

@@ -1,0 +1,9 @@
+.category-card {
+  text-align: center;
+}
+
+.category-card img {
+  width: 357px;
+  height: auto;
+  margin-bottom: 1.5rem;
+}
