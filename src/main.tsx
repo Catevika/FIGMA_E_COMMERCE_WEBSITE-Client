@@ -12,8 +12,10 @@ import Home1 from './pages/Home1/Home1.tsx';
 import Home2 from './pages/Home2/Home2.tsx';
 import Home3 from './pages/Home3/Home3.tsx';
 import Home4 from './pages/Home4/Home4.tsx';
+import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy.tsx';
 import Signin from './pages/Signin/Signin.tsx';
 import Signup from './pages/Signup/Signup.tsx';
+import UseTerms from './pages/UseTerms/UseTerms.tsx';
 
 const router = createBrowserRouter([
   {
@@ -25,7 +27,18 @@ const router = createBrowserRouter([
     path: '/signup',
     element: <Signup />,
     errorElement: <ErrorPage />
-  }, {
+  },
+  {
+    path: '/privacy',
+    element: <PrivacyPolicy />,
+    errorElement: <ErrorPage />
+  },
+  {
+    path: '/use',
+    element: <UseTerms />,
+    errorElement: <ErrorPage />
+  },
+  {
     path: '/signin',
     element: <Signin />,
     errorElement: <ErrorPage />

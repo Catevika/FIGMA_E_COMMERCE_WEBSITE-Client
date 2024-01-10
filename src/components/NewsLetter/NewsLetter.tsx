@@ -13,7 +13,7 @@ const NewsLetter = () => {
     setNewsletterEmail(e.target.value);
   };
 
-  const handleSubmit = (e: React.SyntheticEvent) => {
+  const handleSubmit = (e: React.SyntheticEvent<HTMLFormElement>) => {
     e.preventDefault();
     const target = e.target as typeof e.target & {
       email: { value: string; };
