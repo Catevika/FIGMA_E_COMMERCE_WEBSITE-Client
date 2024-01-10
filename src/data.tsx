@@ -106,7 +106,7 @@ export const services = [
   },
   {
     id: 3,
-    iconUrl: '/src/assets/icons/payment-icon.svg',
+    iconUrl: '/src/assets/icons/payment-secure-icon.svg',
     title: 'Secure Payments',
     description: 'Secured by Stripe'
   },
