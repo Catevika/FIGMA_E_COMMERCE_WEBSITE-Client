@@ -1,12 +1,12 @@
 .home2-hero-container {
+  display: flex;
+  gap: 1.75rem;
+  height: 85vh;
+  margin: -10px -10rem 0;
   background-image: url('/src/assets/images/home-2/home-2-hero.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
-  height: 85vh;
-  display: flex;
-  gap: 1.75rem;
-  margin: -10px -10rem 0;
 }
 
 .home2-hero-text-container {
@@ -178,6 +178,10 @@
   margin: 0 -10rem;
   background-image: url('/src/assets/images/home-2/Home-2-Newsletter.png');
   background-repeat: no-repeat;
+}
+
+.home2-newsletter-container button {
+  color: var(--clr-black-900);
 }
 
 @media(max-width: 1275px) {

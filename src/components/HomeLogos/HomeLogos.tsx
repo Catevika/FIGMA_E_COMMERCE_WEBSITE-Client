@@ -1,3 +1,4 @@
+import { useRef, useState } from "react";
 import arrowPrev from '../../assets/icons/arrow-left.svg';
 import arrowNext from '../../assets/icons/arrow-right.svg';
 import { Logo } from '../../types';
@@ -9,28 +10,44 @@ type Props = {
 };
 
 const HomeLogos = ({ logos }: Props) => {
-  const homeLogosContent = document.querySelector('.homeLogos-content');
+  const elementRef = useRef(null);
 
-  const handlePrevClick = () => {
-    homeLogosContent ? homeLogosContent.scrollLeft -= 167 : null;
-  };
+  const [ arrowDisable, setArrowDisable ] = useState(true);
 
-  const handleNextClick = () => {
-    homeLogosContent ? homeLogosContent.scrollLeft += 167 : null;
+  const handleHorizantalScroll = (element: HTMLElement, speed: number, distance: number, step: number) => {
+    let scrollAmount = 0;
+    const slideTimer = setInterval(() => {
+      element.scrollLeft += step;
+      scrollAmount += Math.abs(step);
+      if (scrollAmount >= distance) {
+        clearInterval(slideTimer);
+      }
+      if (element.scrollLeft === 0) {
+        setArrowDisable(true);
+      } else {
+        setArrowDisable(false);
+      }
+    }, speed);
   };
 
   return (
     <>
-      <div className='homeLogos-content'>
+      <div className='homeLogos-content' ref={elementRef}>
         {logos.map(logo => <img src={logo.url} key={logo.id} alt="Logo" className='homeLogos-logo' />)}
       </div>
       <div className='slider-icon-container'>
-        <div className='slider-icon left' onClick={handlePrevClick}>
+        <button className='slider-icon left' onClick={() => {
+          elementRef.current ?
+            handleHorizantalScroll(elementRef.current, 25, 100, -10) : null;
+        }} disabled={arrowDisable}>
           <img src={arrowPrev} alt='Previous icon' />
-        </div>
-        <div className='slider-icon right'>
-          <img src={arrowNext} alt='Next icon' onClick={handleNextClick} />
-        </div>
+        </button>
+        <button className='slider-icon right'>
+          <img src={arrowNext} alt='Next icon' onClick={() => {
+            elementRef.current ?
+              handleHorizantalScroll(elementRef.current, 25, 100, 10) : null;
+          }} />
+        </button>
       </div>
     </>
   );

@@ -1,8 +1,8 @@
 :root {
-  /* primary color */
+  /* colors */
   --clr-black: hsl(0, 0%, 0%);
 
-  /* secondary colors */
+  --clr-dark-blue: hsl(219, 27%, 12%);
   --clr-blue: hsl(219, 100%, 61%);
   --clr-green: hsl(153, 59%, 51%);
   --clr-orange: hsl(40, 99%, 67%);

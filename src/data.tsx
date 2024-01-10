@@ -462,3 +462,236 @@ export const contact = {
   country: 'Vietnam',
   phoneNumber: '84-756-3237'
 };
+
+export const home4Products = [
+  {
+    id: 1,
+    url: '/src/assets/images/home-4/Home-4-Product-1.png',
+    newItem: true,
+    hotItem: false,
+    percent: undefined,
+    buttonLabel: 'Add to cart',
+    name: '96 Nuptse Dip Dye Korea',
+    description: 'Puffers Jacket',
+    price: 400.00,
+    oldPrice: undefined
+  },
+  {
+    id: 2,
+    url: '/src/assets/images/home-4/Home-4-Product-2.png',
+    newItem: true,
+    hotItem: false,
+    percent: undefined,
+    buttonLabel: 'Add to cart',
+    name: 'Paradigm Chilliwack',
+    description: 'Black Label Jacket',
+    price: 349.99,
+    oldPrice: undefined
+  },
+  {
+    id: 3,
+    url: '/src/assets/images/home-4/Home-4-Product-3.png',
+    newItem: true,
+    hotItem: false,
+    percent: undefined,
+    buttonLabel: 'Add to cart',
+    name: '1996 Retro Nuptse',
+    description: 'Cashmere Jacket in Gray',
+    price: 149.99,
+    oldPrice: undefined
+  },
+  {
+    id: 4,
+    url: '/src/assets/images/home-4/Home-4-Product-4.png',
+    newItem: true,
+    hotItem: false,
+    percent: undefined,
+    buttonLabel: 'Add to cart',
+    name: 'Freestyle Crew Racer',
+    description: 'Leather jacket',
+    price: 595.00,
+    oldPrice: undefined
+  },
+  {
+    id: 5,
+    url: '/src/assets/images/home-4/Home-4-Product-5.png',
+    newItem: true,
+    hotItem: false,
+    percent: undefined,
+    buttonLabel: 'Add to cart',
+    name: 'Humanature',
+    description: 'Chilliwack jacket',
+    price: 1195.00,
+    oldPrice: undefined
+  }
+];
+
+export const home4Categories = [
+  {
+    id: 1,
+    url: '/src/assets/images/home-4/Home-4-Category-1.png',
+    name: 'Lightweights'
+  },
+  {
+    id: 2,
+    url: '/src/assets/images/home-4/Home-4-Category-2.png',
+    name: 'Bombers'
+  },
+  {
+    id: 3,
+    url: '/src/assets/images/home-4/Home-4-Category-3.png',
+    name: 'Puffers'
+  },
+  {
+    id: 4,
+    url: '/src/assets/images/home-4/Home-4-Category-4.png',
+    name: 'Gilets'
+  },
+  {
+    id: 5,
+    url: '/src/assets/images/home-4/Home-4-Category-5.png',
+    name: 'Coats'
+  },
+  {
+    id: 6,
+    url: '/src/assets/images/home-4/Home-4-Category-6.png',
+    name: 'Rainwear'
+  },
+
+];
+
+export const home4Best = [
+  {
+    id: 1,
+    url: '/src/assets/images/home-4/Home-4-Best-1.png',
+    newItem: false,
+    hotItem: true,
+    percent: undefined,
+    buttonLabel: 'Add to cart',
+    name: 'Freestyle Crew Racer',
+    description: 'Leather jacket',
+    price: 595.00,
+    oldPrice: undefined
+  },
+  {
+    id: 2,
+    url: '/src/assets/images/home-4/Home-4-Best-2.png',
+    newItem: false,
+    hotItem: true,
+    percent: undefined,
+    buttonLabel: 'Add to cart',
+    name: '1996 Retro Nuptse',
+    description: 'Cashmere Jacket in Gray',
+    price: 149.99,
+    oldPrice: undefined
+  },
+  {
+    id: 3,
+    url: '/src/assets/images/home-4/Home-4-Best-3.png',
+    newItem: false,
+    hotItem: true,
+    percent: undefined,
+    buttonLabel: 'Add to cart',
+    name: 'Paradigm Chilliwack',
+    description: 'Black Label Jacket',
+    price: 349.99,
+    oldPrice: undefined
+  },
+  {
+    id: 4,
+    url: '/src/assets/images/home-4/Home-4-Best-4.png',
+    newItem: false,
+    hotItem: true,
+    percent: undefined,
+    buttonLabel: 'Add to cart',
+    name: '96 Nuptse Dip Dye',
+    description: 'Bomber Jacket',
+    price: 399.99,
+    oldPrice: undefined
+  },
+  {
+    id: 5,
+    url: '/src/assets/images/home-4/Home-4-Best-5.png',
+    newItem: false,
+    hotItem: true,
+    percent: -50,
+    buttonLabel: 'Add to cart',
+    name: 'Harrington',
+    description: 'Oversized real leather jacket in Black',
+    price: 249.99,
+    oldPrice: 499.99,
+  },
+  {
+    id: 6,
+    url: '/src/assets/images/home-4/Home-4-Best-6.png',
+    newItem: false,
+    hotItem: true,
+    percent: undefined,
+    buttonLabel: 'Add to cart',
+    name: '96 Nuptse Dip Dye Korea',
+    description: 'Puffers Jacket',
+    price: 400.00,
+    oldPrice: undefined
+  },
+  {
+    id: 7,
+    url: '/src/assets/images/home-4/Home-4-Best-7.png',
+    newItem: false,
+    hotItem: true,
+    percent: undefined,
+    buttonLabel: 'Add to cart',
+    name: 'Paradigm Chilliwack',
+    description: 'Black label coat',
+    price: 795.00,
+    oldPrice: undefined
+  },
+  {
+    id: 8,
+    url: '/src/assets/images/home-4/Home-4-Best-8.png',
+    newItem: false,
+    hotItem: true,
+    percent: undefined,
+    buttonLabel: 'Add to cart',
+    name: 'Men\'s Torrentshell 3L',
+    description: 'Rain Jacket in Brown',
+    price: 249.99,
+    oldPrice: undefined
+  },
+];
+
+export const home4Articles = [
+  {
+    id: 1,
+    articleUrl: '/src/assets/images/home-4/Home-4-Article-1.png',
+    title: '2024 Autumn Gift Guide'
+  },
+  {
+    id: 2,
+    articleUrl: '/src/assets/images/home-4/Home-4-Article-2.png',
+    title: '2024 Holiday Gift Guide'
+  },
+  {
+    id: 3,
+    articleUrl: '/src/assets/images/home-4/Home-4-Article-3.png',
+    title: '2024 Winter Gift Guide'
+  },
+];
+
+export const Home4NewsFeedImages = [
+  {
+    id: 1,
+    url: '/src/assets/images/home-4/Home-4-Instagram-1.png'
+  },
+  {
+    id: 2,
+    url: '/src/assets/images/home-4/Home-4-Instagram-2.png'
+  },
+  {
+    id: 3,
+    url: '/src/assets/images/home-4/Home-4-Instagram-3.png'
+  },
+  {
+    id: 4,
+    url: '/src/assets/images/home-4/Home-4-Instagram-4.png'
+  }
+];

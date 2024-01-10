@@ -19,7 +19,7 @@ const Searchbar = ({ isSearchOpen, toggleSearchBar }: Props) => {
       {isSearchOpen ?
         <p className='nav-search'>
           <img src={searchicon} alt='Search icon' className='nav-icon' onClick={toggleSearchBar} />
-          <input type='text' placeholder='Search' autoFocus value={searchTerm} onChange={handleChange} name='Search' />
+          <input type='text' placeholder='Search' autoFocus value={searchTerm} onChange={handleChange} name='search' />
         </p>
         : <img src={searchicon} alt='Search icon' className='nav-icon' onClick={toggleSearchBar} />}
     </>

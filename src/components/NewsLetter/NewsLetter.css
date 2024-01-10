@@ -124,7 +124,7 @@
 
   .home-newsletter-bottom-email {
     flex-direction: column;
-    width: 70%;
+    width: 56%;
     gap: 1rem;
   }
 }

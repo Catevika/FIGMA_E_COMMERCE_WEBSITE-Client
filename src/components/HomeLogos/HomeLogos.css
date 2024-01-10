@@ -1,14 +1,3 @@
-/* .homeLogos-content::-webkit-scrollbar {
-  display: block;
-  width: 80%;
-  height: 3px;
-  background-color: var(--clr-light-gray);
-}
-
-.homeLogos-content::-webkit-scrollbar-thumb {
-  background: var(--clr-black-900);
-} */
-
 .homeLogos-content::-webkit-scrollbar {
   display: none;
 }

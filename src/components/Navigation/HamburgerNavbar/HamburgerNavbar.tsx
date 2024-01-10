@@ -31,7 +31,7 @@ const HamburgerNavbar = ({ toggleHamburgerMenu }: Props) => {
           </div>
           <div className='hamburgerNavbar-search'>
             <img src={searchicon} alt='Search icon' className='hamburgerNavbar-nav-icon' />
-            <input type='text' placeholder='Search' value={searchTerm} onChange={handleChange} name='Search' />
+            <input type='text' placeholder='Search' value={searchTerm} onChange={handleChange} name='search' />
           </div>
           <div className='hamburgerNavbar-left-middle'>
             <nav className='hamburgerNavbar-nav'>

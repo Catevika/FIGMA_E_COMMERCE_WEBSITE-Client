@@ -12,6 +12,16 @@ const NewsLetter = () => {
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setNewsletterEmail(e.target.value);
   };
+
+  const handleSubmit = (e: React.SyntheticEvent) => {
+    e.preventDefault();
+    const target = e.target as typeof e.target & {
+      email: { value: string; };
+    };
+    const email = target.email.value;
+    localStorage.setItem('NewsletterEmail', email);
+  };
+
   return (
     <div className='home-newsletter'>
       <div className='home-newsletter-top-text'>
@@ -19,7 +29,7 @@ const NewsLetter = () => {
         <p>Sign up for deals, new products and promotions</p>
       </div>
       <div className='home-newsletter-bottom-email'>
-        <form className='home-newsletter-bottom-email-form' method='POST'>
+        <form className='home-newsletter-bottom-email-form' method='POST' onSubmit={handleSubmit}>
           <label htmlFor='email'><img src={location.pathname.includes('home/3') ? emailIconWhite : emailIcon} alt='Email icon' />&nbsp;<input type='email' id='email' name='email' autoComplete='email' placeholder='Email address' value={newsletterEmail} onChange={handleChange} /></label>
           <button type='submit'>Submit</button>
         </form>
