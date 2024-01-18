@@ -1,13 +1,22 @@
 import { useState } from 'react';
+import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import eye from '../../assets/icons/eye-icon.svg';
+import spinnerIcon from '../../assets/icons/spinner-icon.svg';
 import authImg from '../../assets/images/auth/auth-img.png';
 import Logo from '../../components/Logo/Logo';
 import RememberCheckbox from '../../components/RememberCheckbox/RememberCheckbox';
+import { setCredentials } from '../../features/auth/authSlice';
+import { useSigninMutation } from '../../features/auth/userApiSlice';
 import '../Signup/Signup.css';
 
 const Signin = () => {
-  const initialState = { login: '', password: '' };
+  const navigate = useNavigate();
+
+  const [ signin, { isLoading } ] = useSigninMutation();
+  const dispatch = useDispatch();
+
+  const initialState = { username: '', password: '' };
   const [ currentUser, setCurrentUser ] = useState(initialState);
 
   const [ passwordVisible, setPasswordVisible ] = useState(false);
@@ -17,8 +26,6 @@ const Signin = () => {
 
   const [ errorMessage, setErrorMessage ] = useState('');
 
-  const navigate = useNavigate();
-
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setErrorMessage('');
     const name = e.target.name;
@@ -27,22 +34,25 @@ const Signin = () => {
     setCurrentUser(currentUser => ({ ...currentUser, [ name ]: value }));
   };
 
-  const handleSubmit = (e: React.SyntheticEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.SyntheticEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const registeredUser = JSON.parse(localStorage.getItem('User')!);
-    const rememberMe = JSON.parse(localStorage.getItem('RememberMe')!);
-
-    if ((currentUser.login === registeredUser.username || currentUser.login === registeredUser.email) && (currentUser.password === registeredUser.password)) {
-      rememberMe === true ? localStorage.setItem('CurrentUser', JSON.stringify(currentUser)) : null;
-      navigate('/home/1');
-    } else {
-      setErrorMessage('Please enter valid credentials or reset your password');
+    try {
+      const userData = await signin(currentUser).unwrap();
+      const { username } = currentUser;
+      dispatch(setCredentials({ ...userData, username }));
+      setCurrentUser(initialState);
+      navigate('/account');
+    } catch (error) {
+      console.log(error);
+      setErrorMessage('Login Failed');
     }
   };
 
   return (
     <section className='container'>
-      <div className='content'>
+      {isLoading ? <div className='spinner-container'>
+        <img src={spinnerIcon} alt='Spinner icon' />
+      </div> : <div className='content'>
         <div className='left-side'>
           <div className='logo-auth'><Logo /></div>
           <img src={authImg} alt='armchair' aria-hidden='true' />
@@ -51,8 +61,8 @@ const Signin = () => {
           <h4>Sign in</h4>
           <form className='form' method='POST' onSubmit={handleSubmit}>
             <div className='form-group'>
-              <label htmlFor='login'>Your username or email address</label>
-              <input type='text' id='login' name='login' autoComplete='off' value={currentUser.login} onChange={handleChange} required />
+              <label htmlFor='username'>Your username</label>
+              <input type='text' id='username' name='username' autoComplete='username' value={currentUser.username} onChange={handleChange} required />
             </div>
 
             <div className='form-group'>
@@ -65,12 +75,12 @@ const Signin = () => {
             </div>
 
             <div className='error-container'>
-              <p className='error'>{errorMessage ? errorMessage : null}</p>
+              <div className='error'>{errorMessage ? errorMessage : null}</div>
             </div>
             <button type='submit' className='btn btn-small'>Sign In</button>
           </form>
         </div>
-      </div>
+      </div>}
     </section>
   );
 };

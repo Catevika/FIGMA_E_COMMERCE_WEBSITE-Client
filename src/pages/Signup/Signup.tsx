@@ -1,10 +1,11 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import eye from '../../assets/icons/eye-icon.svg';
+import spinnerIcon from '../../assets/icons/spinner-icon.svg';
 import authImg from '../../assets/images/auth/auth-img.png';
 import Logo from '../../components/Logo/Logo';
 import TermsCheckbox from '../../components/TermsCheckbox/TermsCheckbox';
-import { User } from '../../types';
+import { useSignupMutation } from '../../features/auth/userApiSlice';
 import './Signup.css';
 
 const Signup = () => {
@@ -16,24 +17,36 @@ const Signup = () => {
     setPasswordVisible(!passwordVisible);
   };
 
-  const navigate = useNavigate();
-
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const name = e.target.name;
     const value = e.target.value;
 
-    setUser((user: User) => ({ ...user, [ name ]: value }));
+    setUser((user) => ({ ...user, [ name ]: value }));
   };
 
-  const handleSubmit = (e: React.SyntheticEvent<HTMLFormElement>) => {
+  const navigate = useNavigate();
+
+  const [ register, { isLoading } ] = useSignupMutation();
+  const [ errorMessage, setErrorMessage ] = useState('');
+
+  const handleSubmit = async (e: React.SyntheticEvent<HTMLFormElement>) => {
     e.preventDefault();
-    localStorage.setItem('User', JSON.stringify(user));
-    navigate('/home/1');
+    try {
+      const res = await register(user).unwrap();
+      console.log(res);
+      setUser(initialState);
+      navigate('/home/1');
+    } catch (error) {
+      console.log(error);
+      setErrorMessage('Registration Failed');
+    }
   };
 
   return (
     <section className='container'>
-      <div className='content'>
+      {isLoading ? <div className='spinner-container'>
+        < img src={spinnerIcon} alt='Spinner icon' />
+      </div> : <div className='content'>
         <div className='left-side'>
           <div className='logo-auth'><Logo /></div>
           <img src={authImg} alt='armchair' aria-hidden='true' />
@@ -62,11 +75,13 @@ const Signup = () => {
             </div>
 
             <TermsCheckbox />
-
+            <div className='error-container'>
+              <div className='error'>{errorMessage ? errorMessage : null}</div>
+            </div>
             <button type='submit' className='btn btn-small'>Sign Up</button>
           </form>
         </div>
-      </div>
+      </div>}
     </section>
   );
 };

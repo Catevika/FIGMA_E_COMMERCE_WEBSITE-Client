@@ -3,17 +3,15 @@ import { useNavigate } from 'react-router-dom';
 import Layout from './components/Layout/Layout';
 
 function App() {
-  const isRegistered = localStorage.getItem('User');
-  const currentUser = localStorage.getItem('CurrentUser');
   const navigate = useNavigate();
 
+
   useEffect(() => {
-    isRegistered && currentUser ? navigate('/home/1') :
-      isRegistered && !currentUser ? navigate('/signin') :
-        navigate('/signup');
-  }, [ currentUser, isRegistered, navigate ]);
+    navigate('/home/1');
+  }, [ navigate ]);
 
   return (
+
     <Layout />
   );
 }

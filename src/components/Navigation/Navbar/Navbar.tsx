@@ -31,7 +31,7 @@ const Navbar = () => {
       <div className={isSearchOpen ? 'nav-icons open' : 'nav-icons'}>
         <Searchbar isSearchOpen={isSearchOpen} toggleSearchBar={toggleSearchBar} />
         <div className='nav-other-icons'>
-          <img src={usericon} alt='User icon' className='nav-icon' />
+          <NavLink to='/account' className={({ isActive }) => isActive ? 'mega-menu active' : 'mega-menu'}><img src={usericon} alt='User icon' className='nav-icon' /></NavLink>
           <ShoppingCartIcons />
         </div>
       </div>

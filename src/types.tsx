@@ -1,10 +1,16 @@
-export type User = { name: string, username: string, email: string, password: string; };
+export type User = {
+  name: string | undefined,
+  username: string | undefined,
+  email: string | undefined,
+  password: string | undefined;
+};
 
 export type Product = {
-  id: number,
+  id: string,
   url: string,
   newItem: boolean,
   hotItem: boolean,
+  favorite: boolean,
   percent: number | undefined,
   buttonLabel: string,
   name: string,
@@ -14,30 +20,30 @@ export type Product = {
 };
 
 export type Service = {
-  id: number,
+  id: string,
   iconUrl: string,
   title: string,
   description: string;
 };
 
 export type Article = {
-  id: number,
+  id: string,
   articleUrl: string,
   title: string;
 };
 
 export type NewsFeedImage = {
-  id: number,
+  id: string,
   url: string;
 };
 
 export type Logo = {
-  id: number,
+  id: string,
   url: string;
 };
 
 export type Category = {
-  id: number,
+  id: string,
   url: string,
   name: string;
 };

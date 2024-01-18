@@ -1,8 +1,16 @@
-.container {
+.container,
+.spinner-container {
   display: flex;
   align-items: center;
   min-height: 100vh;
   min-height: 100dvh;
+}
+
+.spinner-container svg {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: 20px;
 }
 
 .content {

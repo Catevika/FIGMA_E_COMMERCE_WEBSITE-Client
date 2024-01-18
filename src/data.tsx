@@ -34,6 +34,7 @@ export const products = [
     url: '/src/assets/images/home-1/Home-1-Loveseat.png',
     newItem: true,
     hotItem: false,
+    favorite: false,
     percent: -50,
     buttonLabel: 'Add to cart',
     name: 'LoveSeat Sofa',
@@ -46,6 +47,7 @@ export const products = [
     url: '/src/assets/images/home-1/Home-1-Table Lamp.png',
     newItem: true,
     hotItem: false,
+    favorite: false,
     percent: -50,
     buttonLabel: 'Add to cart',
     name: 'Table Lamp',
@@ -58,6 +60,7 @@ export const products = [
     url: '/src/assets/images/home-1/Home-1-Beige Table Lamp.png',
     newItem: true,
     hotItem: false,
+    favorite: false,
     percent: -50,
     buttonLabel: 'Add to cart',
     name: 'Beige Table Lamp',
@@ -70,6 +73,7 @@ export const products = [
     url: '/src/assets/images/home-1/Home-1-Bamboo Basket.png',
     newItem: true,
     hotItem: false,
+    favorite: false,
     percent: -50,
     buttonLabel: 'Add to cart',
     name: 'Bamboo Basket',
@@ -82,6 +86,7 @@ export const products = [
     url: '/src/assets/images/home-1/Home-1-Toaster.png',
     newItem: true,
     hotItem: false,
+    favorite: false,
     percent: -50,
     buttonLabel: 'Add to cart',
     name: 'Toaster',
@@ -122,7 +127,7 @@ export const articles = [
   {
     id: 1,
     articleUrl: '/src/assets/images/home-1/Home-1-Article-1.png',
-    title: '7 ways to decor your home'
+    title: 'Home decoration in 7 ways'
   },
   {
     id: 2,
@@ -132,7 +137,7 @@ export const articles = [
   {
     id: 3,
     articleUrl: '/src/assets/images/home-1/Home-1-Article-3.png',
-    title: 'Decor your bedroom'
+    title: 'Bedroom decoration'
   }
 ];
 
@@ -169,6 +174,7 @@ export const home2Products = [
     url: '/src/assets/images/home-2/headband-1.png',
     newItem: false,
     hotItem: true,
+    favorite: false,
     percent: undefined,
     buttonLabel: 'Add to cart',
     name: 'Skullcandy',
@@ -181,6 +187,7 @@ export const home2Products = [
     url: '/src/assets/images/home-2/headband-2.png',
     newItem: false,
     hotItem: true,
+    favorite: false,
     percent: undefined,
     buttonLabel: 'Add to cart',
     name: 'Beats',
@@ -193,6 +200,7 @@ export const home2Products = [
     url: '/src/assets/images/home-2/headband-3.png',
     newItem: false,
     hotItem: true,
+    favorite: false,
     percent: undefined,
     buttonLabel: 'Add to cart',
     name: 'Sony - WH-CH720N Wireless',
@@ -205,6 +213,7 @@ export const home2Products = [
     url: '/src/assets/images/home-2/earbuds-1.png',
     newItem: false,
     hotItem: true,
+    favorite: false,
     percent: undefined,
     buttonLabel: 'Add to cart',
     name: 'Skullcandy - Rail True Wireless',
@@ -217,10 +226,11 @@ export const home2Products = [
     url: '/src/assets/images/home-2/earbuds-2.png',
     newItem: false,
     hotItem: true,
+    favorite: false,
     percent: undefined,
     buttonLabel: 'Add to cart',
     name: 'Beats',
-    description: 'Studio Pro',
+    description: 'Studio Pro Wireless',
     price: 224.99,
     oldPrice: undefined
   },
@@ -229,6 +239,7 @@ export const home2Products = [
     url: '/src/assets/images/home-2/earbuds-3.png',
     newItem: false,
     hotItem: true,
+    favorite: false,
     percent: undefined,
     buttonLabel: 'Add to cart',
     name: 'JBL Reflect Flow Pro + Bluetooth',
@@ -241,11 +252,12 @@ export const home2Products = [
     url: '/src/assets/images/home-2/headband-4.png',
     newItem: false,
     hotItem: true,
+    favorite: false,
     percent: undefined,
     buttonLabel: 'Add to cart',
     name: 'Bose',
     description: 'QuietComfort Headphones',
-    price: 349.00,
+    price: 359.00,
     oldPrice: undefined
   },
   {
@@ -253,6 +265,7 @@ export const home2Products = [
     url: '/src/assets/images/home-2/headband-5.png',
     newItem: false,
     hotItem: true,
+    favorite: false,
     percent: undefined,
     buttonLabel: 'Add to cart',
     name: 'AKG',
@@ -287,6 +300,7 @@ export const home3FeaturedProducts = [
     url: '/src/assets/images/home-3/Home-3-featured-1.png',
     newItem: false,
     hotItem: true,
+    favorite: false,
     percent: undefined,
     buttonLabel: 'Add to cart',
     name: 'Shark',
@@ -299,6 +313,7 @@ export const home3FeaturedProducts = [
     url: '/src/assets/images/home-3/Home-3-featured-2.png',
     newItem: false,
     hotItem: true,
+    favorite: false,
     percent: -50,
     buttonLabel: 'Add to cart',
     name: 'Greg Norman',
@@ -311,6 +326,7 @@ export const home3FeaturedProducts = [
     url: '/src/assets/images/home-3/Home-3-featured-3.png',
     newItem: false,
     hotItem: true,
+    favorite: false,
     percent: undefined,
     buttonLabel: 'Add to cart',
     name: 'G/FORE',
@@ -323,6 +339,7 @@ export const home3FeaturedProducts = [
     url: '/src/assets/images/home-3/Home-3-featured-4.png',
     newItem: false,
     hotItem: true,
+    favorite: false,
     percent: undefined,
     buttonLabel: 'Add to cart',
     name: 'Utility Rover',
@@ -335,12 +352,13 @@ export const home3FeaturedProducts = [
     url: '/src/assets/images/home-3/Home-3-featured-5.png',
     newItem: false,
     hotItem: true,
+    favorite: false,
     percent: -50,
     buttonLabel: 'Add to cart',
     name: 'Air Jordan 1',
     description: 'Low G Black/Black/Iron Grey - SS23',
-    price: 111.99,
-    oldPrice: 224
+    price: 110.99,
+    oldPrice: 220.99
   }
 ];
 
@@ -381,17 +399,17 @@ export const home3Articles = [
   {
     id: 1,
     articleUrl: '/src/assets/images/home-3/Home-3-article-1.png',
-    title: '7 ways to decor your home'
+    title: 'Golf Best Shoes'
   },
   {
     id: 2,
     articleUrl: '/src/assets/images/home-3/Home-3-article-2.png',
-    title: 'Kitchen organisation'
+    title: 'After Golf'
   },
   {
     id: 3,
     articleUrl: '/src/assets/images/home-3/Home-3-article-3.png',
-    title: 'Decor your bedroom'
+    title: 'Golf trophies and cups'
   }
 ];
 
@@ -469,6 +487,7 @@ export const home4Products = [
     url: '/src/assets/images/home-4/Home-4-Product-1.png',
     newItem: true,
     hotItem: false,
+    favorite: false,
     percent: undefined,
     buttonLabel: 'Add to cart',
     name: '96 Nuptse Dip Dye Korea',
@@ -481,6 +500,7 @@ export const home4Products = [
     url: '/src/assets/images/home-4/Home-4-Product-2.png',
     newItem: true,
     hotItem: false,
+    favorite: false,
     percent: undefined,
     buttonLabel: 'Add to cart',
     name: 'Paradigm Chilliwack',
@@ -493,6 +513,7 @@ export const home4Products = [
     url: '/src/assets/images/home-4/Home-4-Product-3.png',
     newItem: true,
     hotItem: false,
+    favorite: false,
     percent: undefined,
     buttonLabel: 'Add to cart',
     name: '1996 Retro Nuptse',
@@ -505,6 +526,7 @@ export const home4Products = [
     url: '/src/assets/images/home-4/Home-4-Product-4.png',
     newItem: true,
     hotItem: false,
+    favorite: false,
     percent: undefined,
     buttonLabel: 'Add to cart',
     name: 'Freestyle Crew Racer',
@@ -517,6 +539,7 @@ export const home4Products = [
     url: '/src/assets/images/home-4/Home-4-Product-5.png',
     newItem: true,
     hotItem: false,
+    favorite: false,
     percent: undefined,
     buttonLabel: 'Add to cart',
     name: 'Humanature',
@@ -556,8 +579,7 @@ export const home4Categories = [
     id: 6,
     url: '/src/assets/images/home-4/Home-4-Category-6.png',
     name: 'Rainwear'
-  },
-
+  }
 ];
 
 export const home4Best = [
@@ -566,6 +588,7 @@ export const home4Best = [
     url: '/src/assets/images/home-4/Home-4-Best-1.png',
     newItem: false,
     hotItem: true,
+    favorite: false,
     percent: undefined,
     buttonLabel: 'Add to cart',
     name: 'Freestyle Crew Racer',
@@ -578,6 +601,7 @@ export const home4Best = [
     url: '/src/assets/images/home-4/Home-4-Best-2.png',
     newItem: false,
     hotItem: true,
+    favorite: false,
     percent: undefined,
     buttonLabel: 'Add to cart',
     name: '1996 Retro Nuptse',
@@ -590,6 +614,7 @@ export const home4Best = [
     url: '/src/assets/images/home-4/Home-4-Best-3.png',
     newItem: false,
     hotItem: true,
+    favorite: false,
     percent: undefined,
     buttonLabel: 'Add to cart',
     name: 'Paradigm Chilliwack',
@@ -602,6 +627,7 @@ export const home4Best = [
     url: '/src/assets/images/home-4/Home-4-Best-4.png',
     newItem: false,
     hotItem: true,
+    favorite: false,
     percent: undefined,
     buttonLabel: 'Add to cart',
     name: '96 Nuptse Dip Dye',
@@ -614,6 +640,7 @@ export const home4Best = [
     url: '/src/assets/images/home-4/Home-4-Best-5.png',
     newItem: false,
     hotItem: true,
+    favorite: false,
     percent: -50,
     buttonLabel: 'Add to cart',
     name: 'Harrington',
@@ -626,6 +653,7 @@ export const home4Best = [
     url: '/src/assets/images/home-4/Home-4-Best-6.png',
     newItem: false,
     hotItem: true,
+    favorite: false,
     percent: undefined,
     buttonLabel: 'Add to cart',
     name: '96 Nuptse Dip Dye Korea',
@@ -638,6 +666,7 @@ export const home4Best = [
     url: '/src/assets/images/home-4/Home-4-Best-7.png',
     newItem: false,
     hotItem: true,
+    favorite: false,
     percent: undefined,
     buttonLabel: 'Add to cart',
     name: 'Paradigm Chilliwack',
@@ -650,6 +679,7 @@ export const home4Best = [
     url: '/src/assets/images/home-4/Home-4-Best-8.png',
     newItem: false,
     hotItem: true,
+    favorite: false,
     percent: undefined,
     buttonLabel: 'Add to cart',
     name: 'Men\'s Torrentshell 3L',
@@ -693,5 +723,126 @@ export const Home4NewsFeedImages = [
   {
     id: 4,
     url: '/src/assets/images/home-4/Home-4-Instagram-4.png'
+  }
+];
+
+
+export const shop1Products = [
+  {
+    id: 1,
+    url: '/src/assets/images/home-1/Home-1-Loveseat.png',
+    newItem: true,
+    hotItem: false,
+    favorite: false,
+    percent: -50,
+    buttonLabel: 'Add to cart',
+    name: 'LoveSeat Sofa',
+    description: undefined,
+    price: 199.99,
+    oldPrice: 400.00
+  },
+  {
+    id: 2,
+    url: '/src/assets/images/home-1/Home-1-Living Room.png',
+    newItem: true,
+    hotItem: false,
+    favorite: false,
+    percent: -50,
+    buttonLabel: 'Add to cart',
+    name: 'LoveSeat Sofa',
+    description: undefined,
+    price: 199.99,
+    oldPrice: 400.00
+  },
+  {
+    id: 3,
+    url: '/src/assets/images/home-1/Home-1-Beige Table Lamp.png',
+    newItem: true,
+    hotItem: false,
+    favorite: false,
+    percent: -50,
+    buttonLabel: 'Add to cart',
+    name: 'Beige Table Lamp',
+    description: undefined,
+    price: 24.99,
+    oldPrice: 50.00
+  },
+  {
+    id: 4,
+    url: '/src/assets/images/shop-1/shop-1-white-drawer.png',
+    newItem: true,
+    hotItem: false,
+    favorite: false,
+    percent: -50,
+    buttonLabel: 'Add to cart',
+    name: 'White Drawer unit',
+    description: undefined,
+    price: 89.99,
+    oldPrice: 180.00
+  },
+  {
+    id: 5,
+    url: '/src/assets/images/shop-1/shop-1-black-tray-table.png',
+    newItem: true,
+    hotItem: false,
+    favorite: false,
+    percent: -50,
+    buttonLabel: 'Add to cart',
+    name: 'Black Tray Table',
+    description: undefined,
+    price: 19.99,
+    oldPrice: 40.00
+  },
+  {
+    id: 6,
+    url: '/src/assets/images/shop-1/shop-1-high-lamp.png',
+    newItem: true,
+    hotItem: false,
+    favorite: false,
+    percent: -50,
+    buttonLabel: 'Add to cart',
+    name: 'Lamp',
+    description: undefined,
+    price: 39.00,
+    oldPrice: 79.99
+  },
+  {
+    id: 7,
+    url: '/src/assets/images/shop-1/shop-1-light-beige-pillow.png',
+    newItem: true,
+    hotItem: false,
+    favorite: false,
+    percent: -50,
+    buttonLabel: 'Add to cart',
+    name: 'Light Beige Pillow',
+    description: undefined,
+    price: 3.99,
+    oldPrice: 8.00
+  },
+  {
+    id: 8,
+    url: '/src/assets/images/home-1/Home-1-Table Lamp.png',
+    newItem: true,
+    hotItem: false,
+    favorite: false,
+    percent: -50,
+    buttonLabel: 'Add to cart',
+    name: 'Table Lamp',
+    description: undefined,
+    price: 24.99,
+    oldPrice: 50.00
+  },
+  {
+    id: 9,
+    url: '/src/assets/images/home-1/Home-1-Bamboo Basket.png',
+    newItem: true,
+    hotItem: false,
+    favorite: false,
+    percent: -50,
+    buttonLabel: 'Add to cart',
+    name: 'Bamboo Basket',
+    description: undefined,
+    price: 24.99,
+    oldPrice: 50.00
   }
 ];
