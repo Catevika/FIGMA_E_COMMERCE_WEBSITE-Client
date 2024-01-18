@@ -10,9 +10,9 @@ type Props = {
 };
 
 const ProductCard = ({ product }: Props) => {
-  const { url, newItem, hotItem, percent, buttonLabel, name, description, price, oldPrice } = product;
+  const { url, newItem, hotItem, favorite, percent, buttonLabel, name, description, price, oldPrice } = product;
 
-  const [ isFavorite, setIsFavorite ] = useState(false);
+  const [ isFavorite, setIsFavorite ] = useState(favorite);
   const toggleFavorite = () => setIsFavorite(!isFavorite);
 
   return (

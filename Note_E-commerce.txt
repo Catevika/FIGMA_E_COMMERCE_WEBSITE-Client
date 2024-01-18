@@ -1,5 +1,0 @@
-Fictive Authentication with localStorage
-Fictive protected routes client only
-Default browser form fields validations
-Forgot password? not coded
-No video included, placeholders instead

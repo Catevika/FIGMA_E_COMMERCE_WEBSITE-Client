@@ -41,7 +41,7 @@ const Home2 = () => {
             <h1>Listen&nbsp;to the&nbsp;<span>amazing</span> music&nbsp;sound.</h1>
             <p className='label-2'>Experience music like never before</p>
           </div>
-          <button className='btn-hero btn-medium'>Shopping Now</button>
+          <button className='btn-hero btn-medium'>Shop Now</button>
         </div>
       </div>
       <div className="home2-logos-container">

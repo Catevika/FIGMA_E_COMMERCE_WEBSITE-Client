@@ -20,13 +20,13 @@ const NotificationBar = () => {
   };
 
   let backgroundStyle;
-  if (location.pathname.includes('home/1')) backgroundStyle = { 'backgroundColor': 'var(--clr-light-gray)' };
+  if (location.pathname.includes('home/1') || location.pathname.includes('shop/1')) backgroundStyle = { 'backgroundColor': 'var(--clr-light-gray)' };
   if (location.pathname.includes('home/2')) backgroundStyle = { 'backgroundColor': 'var(--clr-black-900)' };
   if (location.pathname.includes('home/3')) backgroundStyle = { 'backgroundColor': 'var(--clr-green)' };
   if (location.pathname.includes('home/4')) backgroundStyle = { 'backgroundColor': 'var(--clr-blue)' };
 
   let linkStyle;
-  if (location.pathname.includes('home/1')) linkStyle = { 'color': 'var(--clr-blue)', 'borderBottom': '1px solid var(--clr-blue)' };
+  if (location.pathname.includes('home/1') || location.pathname.includes('shop/1')) linkStyle = { 'color': 'var(--clr-blue)', 'borderBottom': '1px solid var(--clr-blue)' };
   if (location.pathname.includes('home/2')) linkStyle = { 'color': 'var(--clr-orange)', 'borderBottom': '1px solid var(--clr-orange)' };
   if (location.pathname.includes('home/3')) linkStyle = { 'color': 'var(--clr-black-900)', 'borderBottom': '1px solid var(--clr-black-900' };
   if (location.pathname.includes('home/4')) linkStyle = { 'color': 'var(--clr-white)', 'borderBottom': '1px solid var(--clr-white' };
@@ -44,10 +44,10 @@ const NotificationBar = () => {
         <div className='notificationbar-content'>
           <img src={(location.pathname.includes('home/2') || location.pathname.includes('home/4')) ? percenticonwhite : percenticon} alt='Percent icon' />
           <span className='text-1' style={colorStyle}>30% off storewide — Limited time!</span>
-          {location.pathname.includes('home/1') ? <Link to='/shop' className='btn-xsmall' style={linkStyle}>Shop Now <img src={bluearrowrighticon} alt='arrow-right icon' /></Link> :
+          {location.pathname.includes('home/1') || location.pathname.includes('shop/1') ? <Link to='/shop' className='btn-xsmall' style={linkStyle}>Shop Now <img src={bluearrowrighticon} alt='arrow-right icon' /></Link> :
             location.pathname.includes('home/2') ? <Link to='/shop' className='btn-xsmall' style={linkStyle}>Shop Now <img src={orangearrowrighticon} alt='arrow-right icon' /></Link> :
               location.pathname.includes('home/4') ? <Link to='/shop' className='btn-xsmall' style={linkStyle}>Shop Now <img src={whitearrowrighticon} alt='arrow-right icon' /></Link> :
-                <Link to='/shop' className='btn-xsmall' style={linkStyle}>Shop Now <img src={arrowrighticon} alt='arrow-right icon' /></Link>
+                <Link to='/shop/1' className='btn-xsmall' style={linkStyle}>Shop Now <img src={arrowrighticon} alt='arrow-right icon' /></Link>
           }
         </div>
         <img src={(location.pathname.includes('home/2') || location.pathname.includes('home/4')) ? closeiconwhite : closeicon} alt='Close icon' onClick={toggleNotificationbar} className='notificationbar-close-icon' />
