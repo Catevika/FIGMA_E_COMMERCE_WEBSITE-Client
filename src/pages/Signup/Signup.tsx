@@ -5,7 +5,7 @@ import spinnerIcon from '../../assets/icons/spinner-icon.svg';
 import authImg from '../../assets/images/auth/auth-img.png';
 import Logo from '../../components/Logo/Logo';
 import TermsCheckbox from '../../components/TermsCheckbox/TermsCheckbox';
-import { useSignupMutation } from '../../features/auth/userApiSlice';
+import { useSignupMutation } from '../../features/user/userApiSlice';
 import './Signup.css';
 
 const Signup = () => {
@@ -32,8 +32,7 @@ const Signup = () => {
   const handleSubmit = async (e: React.SyntheticEvent<HTMLFormElement>) => {
     e.preventDefault();
     try {
-      const res = await register(user).unwrap();
-      console.log(res);
+      await register(user).unwrap();
       setUser(initialState);
       navigate('/home/1');
     } catch (error) {
@@ -55,7 +54,7 @@ const Signup = () => {
           <h4>Sign up</h4>
           <form className='form' method='POST' onSubmit={handleSubmit}>
             <div className='form-group'>
-              <label htmlFor='name'>Your name</label>
+              <label htmlFor='name'>Full name</label>
               <input type='text' id='name' name='name' autoComplete='name' value={user.name} onChange={handleChange} required />
             </div>
 

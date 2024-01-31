@@ -2,12 +2,12 @@ import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import eye from '../../assets/icons/eye-icon.svg';
-import spinnerIcon from '../../assets/icons/spinner-icon.svg';
 import authImg from '../../assets/images/auth/auth-img.png';
 import Logo from '../../components/Logo/Logo';
 import RememberCheckbox from '../../components/RememberCheckbox/RememberCheckbox';
+import Spinner from '../../components/Spinner/Spinner';
 import { setCredentials } from '../../features/auth/authSlice';
-import { useSigninMutation } from '../../features/auth/userApiSlice';
+import { useSigninMutation } from '../../features/user/userApiSlice';
 import '../Signup/Signup.css';
 
 const Signin = () => {
@@ -41,7 +41,7 @@ const Signin = () => {
       const { username } = currentUser;
       dispatch(setCredentials({ ...userData, username }));
       setCurrentUser(initialState);
-      navigate('/account');
+      navigate(`/users/${username}`);
     } catch (error) {
       console.log(error);
       setErrorMessage('Login Failed');
@@ -51,7 +51,7 @@ const Signin = () => {
   return (
     <section className='container'>
       {isLoading ? <div className='spinner-container'>
-        <img src={spinnerIcon} alt='Spinner icon' />
+        <Spinner />
       </div> : <div className='content'>
         <div className='left-side'>
           <div className='logo-auth'><Logo /></div>

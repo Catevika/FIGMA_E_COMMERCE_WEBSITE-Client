@@ -4,7 +4,7 @@ import arrowNext from '../../../assets/icons/arrow-right.svg';
 import './Slider.css';
 
 type Image = {
-  id: number,
+  id: string;
   url: string;
 };
 

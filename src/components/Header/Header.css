@@ -1,12 +1,13 @@
 .header-container {
   position: fixed;
-  top: 40px;
+  top: 0;
   left: 0;
   right: 0;
-  height: 72px;
+  height: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 3rem;
   z-index: 5;
 }
 

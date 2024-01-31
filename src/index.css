@@ -206,6 +206,14 @@ li {
   line-height: 20px;
 }
 
+.label-0 {
+  font-family: var(--ff-inter);
+  font-size: var(--fs-12);
+  font-weight: 700;
+  line-height: 12px;
+  text-transform: uppercase;
+}
+
 .label-1 {
   font-family: var(--ff-inter);
   font-size: var(--fs-16);

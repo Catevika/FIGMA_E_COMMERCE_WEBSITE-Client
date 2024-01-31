@@ -11,7 +11,7 @@ const Layout = () => {
 
   return (
     <>
-      <NotificationBar />
+      {location.pathname.includes('account') ? null : <NotificationBar />}
       <Header />
 
       <main>

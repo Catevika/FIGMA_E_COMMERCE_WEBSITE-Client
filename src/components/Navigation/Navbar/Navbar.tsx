@@ -1,16 +1,37 @@
 import { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom';
 import usericon from '../../../assets/icons/user-icon.svg';
+import { logOut, selectCurrentUser } from '../../../features/auth/authSlice';
+import { useLogoutMutation } from '../../../features/user/userApiSlice';
 import Searchbar from '../../Searchbar/Searchbar';
 import ShoppingCartIcons from '../../ShoppingCartIcons/ShoppingCartIcons';
 import MegaMenuHome from '../MegaMenuHome/MegaMenuHome';
 import './Navbar.css';
 
 const Navbar = () => {
+  const location = useLocation();
+
   const [ isSearchOpen, setIsSearchOpen ] = useState(false);
 
   const toggleSearchBar = () => {
     setIsSearchOpen(!isSearchOpen);
+  };
+
+  const username = useSelector(selectCurrentUser);
+
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const [ logoutApiCall ] = useLogoutMutation();
+
+  const logoutHandler = async () => {
+    try {
+      await logoutApiCall(username).unwrap();
+      dispatch(logOut());
+      navigate('/');
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (
@@ -31,10 +52,16 @@ const Navbar = () => {
       <div className={isSearchOpen ? 'nav-icons open' : 'nav-icons'}>
         <Searchbar isSearchOpen={isSearchOpen} toggleSearchBar={toggleSearchBar} />
         <div className='nav-other-icons'>
-          <NavLink to='/account' className={({ isActive }) => isActive ? 'mega-menu active' : 'mega-menu'}><img src={usericon} alt='User icon' className='nav-icon' /></NavLink>
+          {username ? <div className="profile-dropdown">
+            <img src={usericon} alt='User icon' className='nav-icon' />
+            <div className="profile-dropdown-content">
+              {location.pathname !== `/users/${username}` ? <NavLink to={`/users/${username}`} className={({ isActive }) => isActive ? 'mega-menu active' : 'mega-menu'}>{username} account</NavLink> : null}
+              <NavLink to='/' className={({ isActive }) => isActive ? 'mega-menu active' : 'mega-menu'} onClick={logoutHandler}>Logout</NavLink>
+            </div>
+          </div> : <p><Link to='/signin'>Sign in</Link></p>}
           <ShoppingCartIcons />
         </div>
-      </div>
+      </div >
       {/* {isShopOpen ? <MegaMenuShop /> : null} */}
       {/* {isProductOpen ? <MegaMenuProduct /> : null} */}
     </>

@@ -279,7 +279,7 @@
 
 @media(max-width: 1275px) {
   .home3-hero-container {
-    margin: -10px -5rem 0;
+    margin: 0 -5rem 0;
   }
 
   .home3-middle .home3-link-group {
@@ -304,7 +304,7 @@
 
 @media(max-width: 1024px) {
   .home3-hero-container {
-    margin: -10px -2rem 0;
+    margin: 0 -2rem 0;
   }
 
   .home3-middle h5 {

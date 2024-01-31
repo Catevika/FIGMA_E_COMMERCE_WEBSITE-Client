@@ -1,0 +1,56 @@
+.account-nav-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 2.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--clr-light-gray);
+}
+
+.account-nav-top img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 0.5rem;
+}
+
+.account-nav-user-name {
+  color: var(--clr-black-900);
+  font-weight: var(--fw-600);
+}
+
+.account-nav {
+  display: flex;
+  gap: 0.75rem;
+  flex-direction: column;
+  align-self: flex-start;
+}
+
+.account-nav ul li {
+  padding: 0.5rem 0;
+}
+
+.account-nav ul li:not(:last-of-type)~.account-nav-link:hover,
+.account-nav ul li:not(:last-of-type)~.account-nav-link:focus-within,
+.account-nav ul li:not(:last-of-type)~.account-nav-link.active {
+  border-bottom: 1px solid var(--clr-very-dark-gray);
+}
+
+.account-nav-link {
+  color: var(--clr-bluish-gray);
+  background-color: var(--clr-light-gray);
+}
+
+.account-nav-link:hover,
+.account-nav-link:focus-within,
+.account-nav-link.active {
+  color: var(--clr-very-dark-gray);
+  font-weight: var(--fw-600);
+}
+
+@media(max-width: 768px) {
+  .account-nav {
+    align-self: center;
+  }
+}

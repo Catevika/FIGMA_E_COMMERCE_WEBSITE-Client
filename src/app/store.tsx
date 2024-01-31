@@ -7,10 +7,9 @@ export const store = configureStore({
     [ apiSlice.reducerPath ]: apiSlice.reducer,
     auth: authReducer
   },
+  devTools: import.meta.env.NODE_ENV !== "production",
   middleware: getDefaultMiddleware => getDefaultMiddleware().concat(apiSlice.middleware)
 });
 
-// Infer the `RootState` and `AppDispatch` types from the store itself
 export type RootState = ReturnType<typeof store.getState>;
-// Inferred type: {posts: PostsState, comments: CommentsState, users: UsersState}
 export type AppDispatch = typeof store.dispatch;

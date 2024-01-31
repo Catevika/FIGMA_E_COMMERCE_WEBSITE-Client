@@ -6,10 +6,15 @@ import {
   RouterProvider,
 } from 'react-router-dom';
 import App from './App.tsx';
-import { store } from './app/store';
+import { store } from './app/store.tsx';
+import AccountAddress from './components/AccountAddress/AccountAddress.tsx';
+import AccountForm from './components/AccountForm/AccountForm.tsx';
+import AccountOrders from './components/AccountOrders/AccountOrders.tsx';
+import AccountWishlist from './components/AccountWishlist/AccountWishlist.tsx';
 import Layout from './components/Layout/Layout.tsx';
 import RequireAuth from './features/auth/requireAuth.tsx';
 import './index.css';
+import Account from './pages/Account/Account.tsx';
 import Articles from './pages/Articles/Articles.tsx';
 import Contact from './pages/Contact/Contact.tsx';
 import ErrorPage from './pages/ErrorPage/ErrorPage.tsx';
@@ -17,7 +22,6 @@ import Home1 from './pages/Home1/Home1.tsx';
 import Home2 from './pages/Home2/Home2.tsx';
 import Home3 from './pages/Home3/Home3.tsx';
 import Home4 from './pages/Home4/Home4.tsx';
-import MyAccount from './pages/MyAccount/MyAccount.tsx';
 import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy.tsx';
 import Shop1 from './pages/Shop1/Shop1.tsx';
 import Signin from './pages/Signin/Signin.tsx';
@@ -100,8 +104,24 @@ const router = createBrowserRouter([
   {
     element: <RequireAuth />,
     children: [ {
-      path: '/account',
-      element: <MyAccount />
+      element: <Layout />,
+      children: [ {
+        path: '/users/:username',
+        element: <Account />,
+        children: [ {
+          path: '/users/:username',
+          element: <AccountForm />
+        }, {
+          path: '/users/:username/address',
+          element: <AccountAddress />
+        }, {
+          path: '/users/:username/orders',
+          element: <AccountOrders />
+        }, {
+          path: '/users/:username/wishlist',
+          element: <AccountWishlist />
+        } ]
+      } ]
     } ]
   },
   {

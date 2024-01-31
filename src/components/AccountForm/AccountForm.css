@@ -1,0 +1,65 @@
+.account-form-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 4.5rem;
+}
+
+.account-form-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border: none;
+}
+
+.account-form-sub-title {
+  font-weight: var(--fw-600);
+  margin-bottom: 0.75rem;
+}
+
+.account-form-details .form-group .label-0 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  color: var(--clr-bluish-gray);
+}
+
+.account-form-details .form-group input {
+  border-radius: 0.5rem;
+  border: 1px solid var(--clr-gray);
+}
+
+.account-form-btn-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.account-form-btn-container .btn {
+  display: block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.account-form-btn-container .btn:last-of-type {
+  background-color: var(--clr-bluish-gray);
+}
+
+.account-form-btn-container .btn:last-of-type:hover,
+.account-form-btn-container .btn:last-of-type:focus-within {
+  color: var(--clr-black-900);
+  background-color: var(--clr-light-gray);
+}
+
+@media(max-width: 600px) {
+  .account-form-container {
+    padding: 0;
+  }
+
+  .account-form-btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+}

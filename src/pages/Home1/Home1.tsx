@@ -9,7 +9,6 @@ import NewsLetter from '../../components/NewsLetter/NewsLetter.tsx';
 import { articles, heroImages, products, services } from '../../data.tsx';
 import './Home1.css';
 
-
 const Home1 = () => {
   return (
     <section className='section-content'>
