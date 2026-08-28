@@ -3,16 +3,19 @@ import { logOut, setCredentials } from '../../features/auth/authSlice';
 import { RootState } from '../store';
 
 const baseQuery = fetchBaseQuery({
-  baseUrl: 'http://localhost:5000', // backend url
-  credentials: 'include', // include the cookie in each request
-  prepareHeaders: (headers: Headers, { getState }: Pick<BaseQueryApi, "getState">) => {
-    // send the token with each request
-    const token = (getState() as RootState).auth.token;
-    if (token) {
-      headers.set('Authorization', `Bearer ${token}`);
-    }
-    return headers;
-  }
+	baseUrl: import.meta.env.VITE_API_URL || "http://localhost:5000", // backend url
+	credentials: "include", // include the cookie in each request
+	prepareHeaders: (
+		headers: Headers,
+		{ getState }: Pick<BaseQueryApi, "getState">
+	) => {
+		// send the token with each request
+		const token = (getState() as RootState).auth.token;
+		if (token) {
+			headers.set("Authorization", `Bearer ${token}`);
+		}
+		return headers;
+	},
 });
 
 // If the access token is expired, send a refresh token request to get a new access token
