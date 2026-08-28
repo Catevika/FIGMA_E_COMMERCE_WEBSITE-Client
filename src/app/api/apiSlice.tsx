@@ -3,7 +3,7 @@ import { logOut, setCredentials } from '../../features/auth/authSlice';
 import { RootState } from '../store';
 
 const baseQuery = fetchBaseQuery({
-	baseUrl: import.meta.env.VITE_API_URL || "http://localhost:5000", // backend url
+	baseUrl: import.meta.env.VITE_API_URL || "/api", // backend url
 	credentials: "include", // include the cookie in each request
 	prepareHeaders: (
 		headers: Headers,
