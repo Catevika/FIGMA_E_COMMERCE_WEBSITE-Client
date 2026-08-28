@@ -3,7 +3,7 @@
   gap: 1.75rem;
   height: 85vh;
   margin: -10px -10rem 0;
-  background-image: url('/src/assets/images/home-2/home-2-hero.png');
+  background-image: url('../../assets/images/home-2/home-2-hero.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
@@ -107,7 +107,7 @@
   width: 100%;
   height: 664px;
   padding-bottom: 3rem;
-  background-image: url('/src/assets/images/home-2/headband-collection.png');
+  background-image: url('../../assets/images/home-2/headband-collection.png');
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
@@ -120,7 +120,7 @@
   align-items: flex-end;
   width: 100%;
   padding-bottom: 3rem;
-  background-image: url('/src/assets/images/home-2/earbuds-collection.png');
+  background-image: url('../../assets/images/home-2/earbuds-collection.png');
   background-size: cover;
   background-position: center right;
   background-repeat: no-repeat;
@@ -133,7 +133,7 @@
   align-items: flex-end;
   width: 100%;
   padding-bottom: 3rem;
-  background-image: url('/src/assets/images/home-2/accessories-collection.png');
+  background-image: url('../../assets/images/home-2/accessories-collection.png');
   background-size: cover;
   background-position: center right;
   background-repeat: no-repeat;
@@ -176,7 +176,7 @@
 
 .home2-newsletter-container {
   margin: 0 -10rem;
-  background-image: url('/src/assets/images/home-2/Home-2-Newsletter.png');
+  background-image: url('../../assets/images/home-2/Home-2-Newsletter.png');
   background-repeat: no-repeat;
 }
 
@@ -244,7 +244,7 @@
 
 @media(max-width:768px) {
   .home2-hero-container {
-    background-image: url('/src/assets/images/home-2/home-2-hero-small.png');
+    background-image: url('../../assets/images/home-2/home-2-hero-small.png');
     background-position: center;
     flex-direction: column-reverse;
     align-items: center;

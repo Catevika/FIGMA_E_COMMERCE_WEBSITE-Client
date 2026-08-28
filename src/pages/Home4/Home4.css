@@ -90,7 +90,7 @@
 .home4-middle-left-side-top {
   grid-row: 1 / 2;
   grid-column: 1/2;
-  background-image: url('/src/assets/images/home-4/Home-4-Collection-1.png');
+  background-image: url('../../assets/images/home-4/Home-4-Collection-1.png');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -103,7 +103,7 @@
 .home4-middle-right-side-top {
   grid-row: 1 / 2;
   grid-column: 2/2;
-  background-image: url('/src/assets/images/home-4/Home-4-Collection-2.png');
+  background-image: url('../../assets/images/home-4/Home-4-Collection-2.png');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -116,7 +116,7 @@
 .home4-middle-left-side-bottom {
   grid-row: 2 / 2;
   grid-column: 1/2;
-  background-image: url('/src/assets/images/home-4/Home-4-Collection-3.png');
+  background-image: url('../../assets/images/home-4/Home-4-Collection-3.png');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -129,7 +129,7 @@
 .home4-middle-right-side-bottom {
   grid-row: 2 / 2;
   grid-column: 2/2;
-  background-image: url('/src/assets/images/home-4/Home-4-Collection-4.png');
+  background-image: url('../../assets/images/home-4/Home-4-Collection-4.png');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;

@@ -1,7 +1,7 @@
 .shop1-hero-container {
   display: flex;
   gap: 1.75rem;
-  background-image: url('/src/assets/images/shop-1/shop-1-hero.png');
+  background-image: url('../../assets/images/shop-1/shop-1-hero.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top left;
