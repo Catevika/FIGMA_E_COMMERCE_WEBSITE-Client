@@ -86,4 +86,4 @@ The root route redirects to `/home/1`.
 
 ## Related project
 
-See the [backend README]([../FIGMA_E_COMMERCE_WEBSITE-Backend/README.md](https://github.com/Catevika/FIGMA_E_COMMERCE_WEBSITE-Backend)) for API setup and endpoint details.
+See the [backend README](https://github.com/Catevika/FIGMA_E_COMMERCE_WEBSITE-Backend) for API setup and endpoint details.
