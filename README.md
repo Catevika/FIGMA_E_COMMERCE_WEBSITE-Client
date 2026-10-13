@@ -1,6 +1,6 @@
 # 3legant E-Commerce - Frontend
 
-![Figma-Ecommerce-screenshot](/FIGMA_E_COMMERCE_WEBSITE-Client/src/assets/images/E-Commerce-Screenshot.png)
+![Figma-Ecommerce-screenshot](src/assets/images/E-Commerce-Screenshot.png)
 
 A responsive e-commerce storefront built with React, TypeScript, and Vite. Its visual direction is based on the [3legant E-Commerce UI Design Template on Figma](https://www.figma.com/design/pr4KyoRiwQdH6X5KwApFSa/3legant-E-Commerce-UI-Design-Template--Community-?node-id=3-674&p=f&t=pzGLoqz4S2RRiakc-0).
 
