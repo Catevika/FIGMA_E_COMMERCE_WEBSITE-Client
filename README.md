@@ -28,7 +28,7 @@ Product and editorial content currently comes from local frontend data; the back
 
 - Node.js compatible with the installed Vite version
 - npm
-- The [backend](../FIGMA_E_COMMERCE_WEBSITE-Backend) for authentication and account API requests
+- The [backend](https://github.com/Catevika/FIGMA_E_COMMERCE_WEBSITE-Backend) for authentication and account API requests
 
 ### Install and run
 
